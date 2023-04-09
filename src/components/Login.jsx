@@ -1,6 +1,8 @@
 import React from 'react'
+import { RiCheckboxBlankLine } from 'react-icons/ri';
 import { SectionWrapper } from '../wrapper';
 import { EpicLogo } from '../assets';
+import { platforms } from '../constants';
 
 const Login = () => {
   return (
@@ -33,12 +35,25 @@ const Login = () => {
               INICIAR SESION AHORA
             </button>
           </form>
-          <div>
-            
+          <div className="flex justify-between">
+            <div className="flex ">
+              <RiCheckboxBlankLine className="w-22 mr-6 h-22" />
+              <span>Recuerdame</span>
+            </div>
+            <a href="#" className="underline">Olvide mi contraseña</a>
           </div>
-        </div>
-        <div>
-          Foot
+          <div className="flex flex-col items-center justify-center my-8">
+            <span className="mb-[10px]">O ingresa con:</span>
+            <div className="flex gap-[10px]">
+              {platforms.map((platform) => (
+                <img src={platform.image} key={platform.name} />
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col text-center text-sm mx-[51px]">
+            <p>¿No tienes cuenta en Epic Games? <span className="underline font-bold">Registrate</span> o <span className="underline font-bold">Inicia Sesion mas tarde</span></p>
+            <span className="font-bold mt-[10px] underline">Politica de privacidad</span>
+          </div>
         </div>
       </div>
   )

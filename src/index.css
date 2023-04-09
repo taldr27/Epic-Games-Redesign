@@ -40,16 +40,30 @@
 }
 
 @layer utilities {
+  .w-22 {
+    width: 22px;
+  }
+
+  .h-22 {
+    height: 22px;
+  }
+
   .px-30 {
     padding-left: 30px;
     padding-right: 30px;
   }
+
   .py-18 {
     padding-top: 18px;
     padding-bottom: 18px;
   }
+
   .px-135 {
     padding-left: 135.5px;
     padding-right: 135.5px;
+  }
+
+  .mr-6 {
+    margin-right: 6px;
   }
 }
