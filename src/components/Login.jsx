@@ -1,5 +1,6 @@
 import React from 'react'
 import { RiCheckboxBlankLine } from 'react-icons/ri';
+import { AiFillEyeInvisible } from 'react-icons/ai';
 import { SectionWrapper } from '../wrapper';
 import { EpicLogo } from '../assets';
 import { platforms } from '../constants';
@@ -17,16 +18,19 @@ const Login = () => {
               type="email"
               name="email"
               placeholder="Correo Electronico"
-              className="bg-secondary py-18 px-30 ::placeholder:text-white text-sm
+              className="bg-secondary py-18 px-30 placeholder:text-white text-sm
               text-white outlined-none border border-white mb-5"
             />
-            <input 
-              type="text"
-              name="name"
-              placeholder="Contraseña"
-              className="bg-secondary py-18 px-30 ::placeholder:text-white text-sm
-              text-white outlined-none border border-white mb-6"
-            />
+            <div className="relative">
+              <input 
+                type="text"
+                name="name"
+                placeholder="Contraseña"
+                className="bg-secondary py-18 px-30 placeholder:text-white text-sm
+                text-white outlined-none border border-white mb-6 w-full"
+              />
+              <AiFillEyeInvisible className="absolute top-5 right-6 w-5 h-5" />
+            </div>
             <button
               type="submit"
               className="bg-blue-200 py-18 px-135 outline-none w-full text-white text-sm font-bold
@@ -51,8 +55,8 @@ const Login = () => {
             </div>
           </div>
           <div className="flex flex-col text-center text-sm mx-[51px]">
-            <p>¿No tienes cuenta en Epic Games? <span className="underline font-bold">Registrate</span> o <span className="underline font-bold">Inicia Sesion mas tarde</span></p>
-            <span className="font-bold mt-[10px] underline">Politica de privacidad</span>
+            <p>¿No tienes cuenta en Epic Games? <a className="underline font-bold" href="#">Registrate</a> o <a href="#" className="underline font-bold">Inicia Sesion mas tarde</a></p>
+            <a href="#" className="font-bold mt-[10px] underline">Politica de privacidad</a>
           </div>
         </div>
       </div>
