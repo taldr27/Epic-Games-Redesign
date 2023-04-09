@@ -1,11 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
-import Login from "./components/login";
+import Login from "./components/Login";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative w-full h-screen z-0 ">
-        <div className="bg-login-background bg-cover bg-no-repeat bg-center">
+      <div className="relative z-0 bg-primary">
+        <div className="bg-login-background bg-cover bg-no-repeat bg-center
+                        w-full h-screen flex justify-center items-center">
           <Login />
         </div>
       </div>

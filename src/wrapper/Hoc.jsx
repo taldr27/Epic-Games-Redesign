@@ -1,7 +1,7 @@
 const SectionWrapper = (Component, idName) => 
   function HOC() {
     return (
-      <div className=" ">
+      <div className="p-5">
         <Component />
       </div>
     )
