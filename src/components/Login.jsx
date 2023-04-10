@@ -45,7 +45,8 @@ const Login = ({ onToggleRegister }) => {
               <AiFillEyeInvisible className="absolute top-5 right-6 w-5 h-5" />
             </div>
             <button
-              type="submit"
+              // type="submit"
+              type="button"
               className="bg-blue-200 py-18 px-135 outline-none w-full text-white text-sm font-bold
               hover:bg-blue-100"
             >

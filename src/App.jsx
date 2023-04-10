@@ -13,7 +13,7 @@ const App = () => {
       <div className="relative z-0 bg-primary">
         <div className="bg-login-background bg-cover bg-no-repeat bg-center
                         w-full h-screen flex justify-center items-center">
-          {login ? <Login onToggleRegister={handleRegister} /> : <Register />}
+          {login ? <Login onToggleRegister={handleRegister} /> : <Register onToggleRegister={handleRegister}/>}
         </div>
       </div>
     </BrowserRouter>
