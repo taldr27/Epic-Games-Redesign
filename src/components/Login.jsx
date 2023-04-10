@@ -4,6 +4,7 @@ import { AiFillEyeInvisible } from 'react-icons/ai';
 import { SectionWrapper } from '../wrapper';
 import { EpicLogo } from '../assets';
 import { platforms } from '../constants';
+import { Link } from 'react-router-dom';
 
 const Login = ({ onToggleRegister }) => {
   const handleRegister = () => {
@@ -44,14 +45,16 @@ const Login = ({ onToggleRegister }) => {
               />
               <AiFillEyeInvisible className="absolute top-5 right-6 w-5 h-5" />
             </div>
-            <button
-              // type="submit"
-              type="button"
-              className="bg-blue-200 py-18 px-135 outline-none w-full text-white text-sm font-bold
-              hover:bg-blue-100"
-            >
-              INICIAR SESION AHORA
-            </button>
+            <Link to="/shop">
+              <button
+                // type="submit"
+                type="button"
+                className="bg-blue-200 py-18 px-135 outline-none w-full text-white text-sm font-bold
+                hover:bg-blue-100"
+              >
+                INICIAR SESION AHORA
+              </button>
+            </Link>
           </form>
           <div className="flex justify-between">
             <div className="flex items-center">

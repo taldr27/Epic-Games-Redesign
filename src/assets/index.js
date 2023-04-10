@@ -7,6 +7,8 @@ import nin from '../assets/platforms/nin5.svg';
 import steam from '../assets/platforms/steam6.svg';
 import apple from '../assets/platforms/apple7.svg';
 
+import user_ico from '../assets/user_ico.svg';
+
 
 export {
   EpicLogo,
@@ -16,5 +18,6 @@ export {
   ps,
   nin,
   steam,
-  apple
+  apple,
+  user_ico,
 };

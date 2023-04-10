@@ -6,6 +6,7 @@ import { SectionWrapper } from '../wrapper';
 import { EpicLogo } from '../assets';
 import { platforms } from '../constants';
 import { countries } from 'countries-list';
+import { Link } from 'react-router-dom';
 
 const Register = ({ onToggleRegister }) => {
   const countryList = Object.values(countries);
@@ -61,7 +62,7 @@ const Register = ({ onToggleRegister }) => {
             <input 
               type="text"
               name="name"
-              placeholder="Nombre en Epic Games?"
+              placeholder="Username"
               className="bg-secondary py-18 px-30 placeholder:text-white text-sm
               text-white outlined-none border border-white mb-5"
             />
@@ -83,14 +84,16 @@ const Register = ({ onToggleRegister }) => {
               />
               <AiFillEyeInvisible className="absolute top-5 right-6 w-5 h-5" />
             </div>
-            <button
-              // type="submit"
-              type="button"
-              className="bg-blue-200 py-18 px-135 outline-none w-full text-white text-sm font-bold
-              hover:bg-blue-100"
-            >
-              REGISTRARSE
-            </button>
+            <Link to="/shop">
+              <button
+                // type="submit"
+                type="button"
+                className="bg-blue-200 py-18 px-135 outline-none w-full text-white text-sm font-bold
+                hover:bg-blue-100"
+              >
+                REGISTRARSE
+              </button>
+            </Link>
           </form>
           {/* <div className="flex justify-between">
             <div className="flex items-center">
