@@ -3,7 +3,7 @@ import { SectionWrapper } from '../wrapper'
 
 const Body = () => {
   return (
-    <div>
+    <div className="mt-5">
       Body
     </div>
   )
