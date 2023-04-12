@@ -16,6 +16,15 @@ import cart from '../assets/cart.svg';
 import bell from '../assets/bell.svg';
 import friends from '../assets/friends.svg';
 
+import cyberpunk from '../assets/carousel/cyberpunk.svg';
+import fallguys from '../assets/carousel/fallguys.svg';
+import ffa from '../assets/carousel/ffa.svg';
+import fortnite from '../assets/carousel/fortnite.svg';
+import rdr2 from '../assets/carousel/rdr2.svg';
+
+import ffaIco from '../assets/carousel/ffaIco.svg';
+import shadow from '../assets/carousel/shadow.svg';
+
 export {
   EpicLogo,
   google,
@@ -32,5 +41,12 @@ export {
   unreal,
   cart,
   bell,
-  friends
+  friends,
+  cyberpunk,
+  fallguys,
+  ffa,
+  fortnite,
+  rdr2,
+  ffaIco,
+  shadow,
 };

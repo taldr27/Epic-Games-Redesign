@@ -6,6 +6,12 @@ import {
   nin,
   steam,
   apple,
+  cyberpunk,
+  fallguys,
+  ffa,
+  fortnite,
+  rdr2,
+  ffaIco,
 } from '../assets';
 
 const platforms = [
@@ -39,4 +45,47 @@ const platforms = [
   }
 ]
 
-export { platforms };
+const carouselImages = [
+  {
+    name: "ffa",
+    image: ffa,
+    ico: ffaIco,
+    priceFull: "PEN 279.00",
+    salePrice: "PEN 198.00",
+    description: "¡Revive el clásico juego ahora para con gráficos sorprendentes!"
+  },
+  {
+    name: "cyberpunk",
+    image: cyberpunk,
+    ico: ffaIco,
+    priceFull: "PEN 299.00",
+    salePrice: "PEN 104.00",
+    description: "¡Ingresa a Night City y toma el control de la ciudad!"
+  },
+  {
+    name: "fallguys",
+    image: fallguys,
+    ico: ffaIco,
+    priceFull: "FREE",
+    salePrice: "FREE",
+    description: "¡Salta!"
+  },
+  {
+    name: "fortnite",
+    image: fortnite,
+    ico: ffaIco,
+    priceFull: "FREE",
+    salePrice: "FREE",
+    description: "¡Dispara y construye!"
+  },
+  {
+    name: "rdr2",
+    image: rdr2,
+    ico: ffaIco,
+    priceFull: "PEN 200.00",
+    salePrice: "PEN 104.99",
+    description: "¡Mejor historia y personajes!"
+  }
+]
+
+export { platforms, carouselImages };
