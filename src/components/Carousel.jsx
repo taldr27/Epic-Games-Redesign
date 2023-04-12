@@ -38,6 +38,9 @@ const Carousel = () => {
         <button className="bg-white text-black w-[151px] h-[53px] mr-[10px]">¡AHORRA HOY!</button>
         <button className="bg-transparent border-2 text-white w-[211px] h-[53px]">¡A LA LISTA DE DESEOS!</button>
       </div>
+      <div>
+        
+      </div>
     </div>
   )
 }

@@ -25,6 +25,12 @@ import rdr2 from '../assets/carousel/rdr2.svg';
 import ffaIco from '../assets/carousel/ffaIco.svg';
 import shadow from '../assets/carousel/shadow.svg';
 
+import cyberpunkCard from '../assets/carousel/cards/cyberpunkCard.svg';
+import ffCard from '../assets/carousel/cards/ffCard.svg';
+import fgCard from '../assets/carousel/cards/fgCard.svg';
+import fortniteCard from '../assets/carousel/cards/fortniteCard.svg';
+import rdr2Card from '../assets/carousel/cards/rdr2Card.svg';
+
 export {
   EpicLogo,
   google,
@@ -49,4 +55,9 @@ export {
   rdr2,
   ffaIco,
   shadow,
+  cyberpunkCard,
+  ffCard,
+  fgCard,
+  fortniteCard,
+  rdr2Card
 };
