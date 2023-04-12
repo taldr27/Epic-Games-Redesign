@@ -60,7 +60,7 @@ const carouselImages = [
     ico: ffaIco,
     priceFull: "PEN 299.00",
     salePrice: "PEN 104.00",
-    description: "¡Ingresa a Night City y toma el control de la ciudad!"
+    description: "¡Revive el clásico juego ahora para con gráficos sorprendentes!"
   },
   {
     name: "fallguys",
@@ -68,7 +68,7 @@ const carouselImages = [
     ico: ffaIco,
     priceFull: "FREE",
     salePrice: "FREE",
-    description: "¡Salta!"
+    description: "¡Revive el clásico juego ahora para con gráficos sorprendentes!"
   },
   {
     name: "fortnite",
@@ -76,7 +76,7 @@ const carouselImages = [
     ico: ffaIco,
     priceFull: "FREE",
     salePrice: "FREE",
-    description: "¡Dispara y construye!"
+    description: "¡Revive el clásico juego ahora para con gráficos sorprendentes!"
   },
   {
     name: "rdr2",
@@ -84,7 +84,7 @@ const carouselImages = [
     ico: ffaIco,
     priceFull: "PEN 200.00",
     salePrice: "PEN 104.99",
-    description: "¡Mejor historia y personajes!"
+    description: "¡Revive el clásico juego ahora para con gráficos sorprendentes!"
   }
 ]
 
