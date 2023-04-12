@@ -7,7 +7,7 @@ import { bell, cart, friends, user_ico } from '../assets';
 
 const TopBar = () => {
   return (
-    <div className="lg:flex justify-between mt-[48px]">
+    <div className="lg:flex justify-between mt-[68px]">
       <div className="flex items-center relative gap-[27px] w-[50%]">
         <AiOutlineLeft className="" />
         <input className="rounded-[47px] w-full p-2 pl-[55px] placeholder:text-[16px]" placeholder="Buscar juegos, jugadores o contenido..." />

@@ -28,7 +28,7 @@ const App = () => {
             path="/shop"
             element={
               <div className="flex">
-                <div className="">
+                <div>
                   <SideBar />
                 </div>
                 <div className="w-full">

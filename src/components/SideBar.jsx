@@ -4,8 +4,8 @@ import { EpicLogo, community, games, shop_ico, unreal } from '../assets'
 
 const SideBar = () => {
   return (
-    <div className="h-screen ml-5 w-[217px]">
-      <div className="flex justify-center mt-[41px] mb-[28.09px]">
+    <div className="h-screen ml-5 w-[217px] mt-[51px]">
+      <div className="flex justify-center mb-[28.09px]">
         <img src={EpicLogo} />
       </div>
       <div className="flex flex-col items-center">
