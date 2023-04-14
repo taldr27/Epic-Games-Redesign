@@ -68,3 +68,13 @@
     margin-right: 6px;
   }
 }
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+}
+

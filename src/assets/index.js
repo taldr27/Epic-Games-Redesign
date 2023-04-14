@@ -31,6 +31,8 @@ import fgCard from '../assets/carousel/cards/fgCard.svg';
 import fortniteCard from '../assets/carousel/cards/fortniteCard.svg';
 import rdr2Card from '../assets/carousel/cards/rdr2Card.svg';
 
+import farcry6 from '../assets/games/farcry6.svg';
+
 export {
   EpicLogo,
   google,
@@ -59,5 +61,6 @@ export {
   ffCard,
   fgCard,
   fortniteCard,
-  rdr2Card
+  rdr2Card,
+  farcry6
 };

@@ -17,6 +17,7 @@ import {
   fgCard,
   fortniteCard,
   rdr2Card,
+  farcry6,
 } from '../assets';
 
 const platforms = [
@@ -107,7 +108,7 @@ const games = [
   {
     id: 0,
     name: "Farcry 6",
-    image: "image",
+    image: farcry6,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
     discount: "50%"
@@ -115,7 +116,7 @@ const games = [
   {
     id: 1,
     name: "Farcry 6",
-    image: "image",
+    image: farcry6,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
     discount: "50%"
@@ -123,7 +124,7 @@ const games = [
   {
     id: 2,
     name: "Farcry 6",
-    image: "image",
+    image: farcry6,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
     discount: "50%"
@@ -131,7 +132,7 @@ const games = [
   {
     id: 3,
     name: "Farcry 6",
-    image: "image",
+    image: farcry6,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
     discount: "50%"
@@ -139,7 +140,7 @@ const games = [
   {
     id: 4,
     name: "Farcry 6",
-    image: "image",
+    image: farcry6,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
     discount: "50%"
@@ -147,11 +148,11 @@ const games = [
   {
     id: 5,
     name: "Farcry 6",
-    image: "image",
+    image: farcry6,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
     discount: "50%"
   }
 ]
 
-export { platforms, carouselImages };
+export { platforms, carouselImages, games };
