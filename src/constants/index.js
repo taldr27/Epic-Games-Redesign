@@ -52,6 +52,7 @@ const platforms = [
 
 const carouselImages = [
   {
+    id: 0,
     name: "ffa",
     image: ffa,
     ico: ffaIco,
@@ -61,6 +62,7 @@ const carouselImages = [
     description: "¡Revive el clásico juego ahora para con gráficos sorprendentes!"
   },
   {
+    id: 1,
     name: "cyberpunk",
     image: cyberpunk,
     ico: ffaIco,
@@ -70,6 +72,7 @@ const carouselImages = [
     description: "¡Revive el clásico juego ahora para con gráficos sorprendentes!"
   },
   {
+    id: 2,
     name: "fallguys",
     image: fallguys,
     ico: ffaIco,
@@ -79,6 +82,7 @@ const carouselImages = [
     description: "¡Revive el clásico juego ahora para con gráficos sorprendentes!"
   },
   {
+    id: 3,
     name: "fortnite",
     image: fortnite,
     ico: ffaIco,
@@ -88,6 +92,7 @@ const carouselImages = [
     description: "¡Revive el clásico juego ahora para con gráficos sorprendentes!"
   },
   {
+    id: 4,
     name: "rdr2",
     image: rdr2,
     ico: ffaIco,

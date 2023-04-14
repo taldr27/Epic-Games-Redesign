@@ -13,8 +13,12 @@ const Carousel = () => {
     const interval = setInterval(goToNextImage, 5000);
     return () => clearInterval(interval);
   }, []);
+
+  const handleNextImage = (id) => {
+    setImageIndex(id);
+  }
   
-  const selected = "border-2 w-[113px] rounded-[10px]"
+  const selected = "border-2 w-[113px]"
   return (
     <div className="relative rounded-md">
       <img
@@ -43,10 +47,11 @@ const Carousel = () => {
       <div className="absolute left-[46%] top-[46%] flex gap-[13px]">
         {carouselImages.map((image) => (
           <img
-          key={image.name}
+          key={image.id}
           src={image.cardImage}
           alt={image.cardImage}
-          className={carouselImages[imageIndex].name === image.name ? selected : ''}
+          className={`cursor-pointer rounded-[10px] ${ carouselImages[imageIndex].name === image.name ? selected : "" }`}
+          onClick={() => handleNextImage(image.id)}
           />
         ))}
       </div>
