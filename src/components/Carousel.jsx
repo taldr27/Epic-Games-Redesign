@@ -6,10 +6,9 @@ const Carousel = () => {
   const [imageIndex, setImageIndex] = useState(0);
   
   const goToNextImage = () => {
-    setImageIndex((prevIndex) =>
-      prevIndex < carouselImages.length - 1 ? prevIndex + 1 : 0
-    );
+    setImageIndex(prevIndex => prevIndex < carouselImages.length - 1 ? prevIndex + 1 : 0);
   };
+  
   useEffect(() => {
     const interval = setInterval(goToNextImage, 5000);
     return () => clearInterval(interval);
