@@ -39,7 +39,10 @@ const Carousel = () => {
         <h2 className="text-base font-bold 2xl:text-3xl">GRANDES DESCUENTOS</h2>
         <p className="text-white text-sm">{carouselImages[imageIndex].description}</p>      
       </div>
-      <span className="font-bold absolute left-[61px] top-[64%]">Desde <span className="line-through">{carouselImages[imageIndex].priceFull}</span> AHORA <span className="text-white">{carouselImages[imageIndex].salePrice}</span></span>
+      {carouselImages[imageIndex].priceFull ? 
+        <span className="font-bold absolute left-[61px] top-[64%]">Desde <span className="line-through">{carouselImages[imageIndex].priceFull}</span> AHORA <span className="text-white">{carouselImages[imageIndex].salePrice}</span></span> 
+          : 
+        <span className="font-bold absolute left-[61px] top-[64%]">FREE</span>}
       <div className="absolute left-[61px] top-[74%] text-sm">
         <button className="bg-white text-black w-[151px] h-[53px] mr-[10px]">¡AHORRA HOY!</button>
         <button className="bg-transparent border-2 text-white w-[211px] h-[53px]">¡A LA LISTA DE DESEOS!</button>

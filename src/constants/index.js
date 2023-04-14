@@ -77,8 +77,8 @@ const carouselImages = [
     image: fallguys,
     ico: ffaIco,
     cardImage: fgCard,
-    priceFull: "FREE",
-    salePrice: "FREE",
+    priceFull: "",
+    salePrice: "",
     description: "¡Revive el clásico juego ahora para con gráficos sorprendentes!"
   },
   {
@@ -87,8 +87,8 @@ const carouselImages = [
     image: fortnite,
     ico: ffaIco,
     cardImage: fortniteCard,
-    priceFull: "FREE",
-    salePrice: "FREE",
+    priceFull: "",
+    salePrice: "",
     description: "¡Revive el clásico juego ahora para con gráficos sorprendentes!"
   },
   {
@@ -100,6 +100,57 @@ const carouselImages = [
     priceFull: "PEN 200.00",
     salePrice: "PEN 104.99",
     description: "¡Revive el clásico juego ahora para con gráficos sorprendentes!"
+  }
+]
+
+const games = [
+  {
+    id: 0,
+    name: "Farcry 6",
+    image: "image",
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "50%"
+  },
+  {
+    id: 1,
+    name: "Farcry 6",
+    image: "image",
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "50%"
+  },
+  {
+    id: 2,
+    name: "Farcry 6",
+    image: "image",
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "50%"
+  },
+  {
+    id: 3,
+    name: "Farcry 6",
+    image: "image",
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "50%"
+  },
+  {
+    id: 4,
+    name: "Farcry 6",
+    image: "image",
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "50%"
+  },
+  {
+    id: 5,
+    name: "Farcry 6",
+    image: "image",
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "50%"
   }
 ]
 
