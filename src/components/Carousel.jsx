@@ -10,13 +10,9 @@ const Carousel = () => {
   };
   
   useEffect(() => {
-    const interval = setInterval(goToNextImage, 5000);
+    const interval = setInterval(goToNextImage, 6000);
     return () => clearInterval(interval);
   }, []);
-
-  const handleNextImage = (id) => {
-    setImageIndex(id);
-  }
 
   const selected = "border-2 w-[113px]"
   return (
