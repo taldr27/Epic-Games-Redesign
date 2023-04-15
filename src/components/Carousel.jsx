@@ -4,21 +4,30 @@ import { shadow } from '../assets';
 
 const Carousel = () => {
   const [imageIndex, setImageIndex] = useState(0);
-  
+  const [intervalId, setIntervalId] = useState(null);
+
   const goToNextImage = () => {
     setImageIndex(prevIndex => prevIndex < carouselImages.length - 1 ? prevIndex + 1 : 0);
   };
   
   useEffect(() => {
-    const interval = setInterval(goToNextImage, 6000);
-    return () => clearInterval(interval);
+    const id = setInterval(goToNextImage, 6000);
+    setIntervalId(id);
+    return () => clearInterval(id);
   }, []);
+
+  const handleImageClick = (index) => {
+    clearInterval(intervalId);
+    setImageIndex(index);
+    const id = setInterval(goToNextImage, 6000);
+    setIntervalId(id);
+  };
 
   const selected = "border-2 w-[113px]"
   return (
-    <div className="relative rounded-md">
+    <div className="relative rounded-md pb-[30%]">
       {carouselImages.map((image, index) => (
-        <div key={image.name} className={`w-full absolute fade ${index === imageIndex ? 'active' : ''}`}>
+        <div key={image.name} className={`w-full absolute h-full fade ${index === imageIndex ? 'active' : ''}`}>
           <img src={image.image} alt={image.name} className="w-full"/>
           <img src={shadow} className="absolute inset-0 object-cover w-full h-full" />
           <img src={image.ico} alt={image.name} className="absolute top-[20%] 2xl:top-[25%] left-[61px] 2xl:w-40" />
@@ -40,20 +49,19 @@ const Carousel = () => {
           </div>
         </div>
       ))}
-      <div className="absolute left-[46%] top-[10em] flex gap-[13px]">
+      <div className="absolute left-[46%] top-[10em] 2xl:top-[55%] 2xl:left-[55%] flex gap-[13px]">
         {carouselImages.map((image, index) => (
           <img
             key={index}
             src={image.cardImage}
             alt={image.cardImage}
-            className={`cursor-pointer rounded-[10px] ${index === imageIndex ? selected : ''}`}
-            onClick={() => setImageIndex(index)}
+            className={`cursor-pointer rounded-[10px] 2xl:w-28 ${index === imageIndex ? selected : ''}`}
+            onClick={() => handleImageClick(index)}
           />
         ))}
       </div>
     </div>
   );
-  
 }
 
 export default Carousel

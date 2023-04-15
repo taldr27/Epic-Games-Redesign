@@ -32,8 +32,8 @@ const App = () => {
                   <SideBar />
                 </div>
                 <div className="w-full">
-                <TopBar />
-                <Body />
+                  <TopBar />
+                  <Body />
                 </div>
               </div>
             }
