@@ -31,6 +31,10 @@ import {
   rocketCG,
   rssCG,
   gtaCG,
+  neverwinter,
+  rdr2U,
+  hextech,
+  ttW,
 } from '../assets';
 
 const platforms = [
@@ -326,4 +330,87 @@ const communityGames = [
   },
 ]
 
-export { platforms, carouselImages, saleGames, freeGames, communityGames };
+const recentUpdated = [
+  {
+    id: 0,
+    name: "Neverwinter",
+    image: neverwinter,
+    fullPrice: "Gratis",
+    salePrice: "",
+    discount: ""
+  },
+  {
+    id: 1,
+    name: "Red Dead Redemption II",
+    image: rdr2U,
+    fullPrice: "PEN 200.00",
+    salePrice: "PEN 104.99",
+    discount: "50%"
+  },
+  {
+    id: 2,
+    name: "Hextech Mayhem",
+    image: hextech,
+    fullPrice: "Gratis",
+    salePrice: "",
+    discount: ""
+  },
+  {
+    id: 3,
+    name: "Rainbow Six Siege",
+    image: rssCG,
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "30%"
+  },
+  {
+    id: 4,
+    name: "Tiny Tina's Wonderlands",
+    image: ttW,
+    fullPrice: "PEN 218.99",
+    salePrice: "PEN 160.99",
+    discount: "40%"
+  },
+  {
+    id: 5,
+    name: "Neverwinter",
+    image: neverwinter,
+    fullPrice: "Gratis",
+    salePrice: "",
+    discount: ""
+  },
+  {
+    id: 6,
+    name: "Red Dead Redemption II",
+    image: rdr2U,
+    fullPrice: "PEN 200.00",
+    salePrice: "PEN 104.99",
+    discount: "50%"
+  },
+  {
+    id: 7,
+    name: "Hextech Mayhem",
+    image: hextech,
+    fullPrice: "Gratis",
+    salePrice: "",
+    discount: ""
+  },
+  {
+    id: 8,
+    name: "Rainbow Six Siege",
+    image: rssCG,
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "30%"
+  },
+  {
+    id: 9,
+    name: "Tiny Tina's Wonderlands",
+    image: ttW,
+    fullPrice: "PEN 218.99",
+    salePrice: "PEN 160.99",
+    discount: "40%"
+  },
+]
+
+export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated };

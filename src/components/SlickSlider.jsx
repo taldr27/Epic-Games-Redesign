@@ -22,11 +22,11 @@ const SlickSlider = ({ games, title }) => {
         modules={[Navigation, A11y]}
         spaceBetween={9}
         slidesPerView={5}
-        navigation={{
-          nextEl: ".image-swiper-button-next",
-          prevEl: ".image-swiper-button-prev",
-          disabledClass: "swiper-button-disabled"
-        }}
+        // navigation={{
+        //   nextEl: ".image-swiper-button-next",
+        //   prevEl: ".image-swiper-button-prev",
+        //   disabledClass: "swiper-button-disabled"
+        // }}
         className=" border-gray-300 mx-auto"
       >
         {games.map((game) => (

@@ -1,11 +1,11 @@
 import React from 'react'
 import SlickSlider from './SlickSlider'
-import { communityGames } from '../constants'
+import { recentUpdated } from '../constants'
 
 const RecentUpdated = () => {
   return (
     <div>
-      <SlickSlider games={communityGames} title={"Actualizado recientemente"} />
+      <SlickSlider games={recentUpdated} title={"Actualizado recientemente"} />
     </div>
   )
 }

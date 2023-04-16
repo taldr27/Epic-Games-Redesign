@@ -56,6 +56,11 @@ import rocketCG from '../assets/communityGames/rocketCG.svg';
 import rssCG from '../assets/communityGames/rssCG.svg';
 import gtaCG from '../assets/communityGames/gtaCG.svg';
 
+import neverwinter from '../assets/recentUpdated/neverwinter.svg';
+import rdr2U from '../assets/recentUpdated/rdr2U.svg';
+import hextech from '../assets/recentUpdated/hmU.svg';
+import ttW from '../assets/recentUpdated/ttW.svg';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -103,5 +108,9 @@ export {
   lolCG,
   rocketCG,
   rssCG,
-  gtaCG
+  gtaCG,
+  neverwinter,
+  rdr2U,
+  hextech,
+  ttW,
 };
