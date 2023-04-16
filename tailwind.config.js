@@ -20,6 +20,7 @@ export default {
         "purple-100": "#6C5BB7",
         "purple-200": "#5847A3",
         "purple-300": "#423579",
+        "line-t": "#949494",
       },
       fontFamily: {
         'brutal': ['Brutal Type', 'sans-serif'],

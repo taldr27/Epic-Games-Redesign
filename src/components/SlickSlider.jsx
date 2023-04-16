@@ -30,9 +30,10 @@ const SlickSlider = ({ games, title }) => {
         className=" border-gray-300 mx-auto"
       >
         {games.map((game) => (
-          <SwiperSlide key={game.id}>
-            <img src={game.image} />
-            <span>{game.name}</span>
+          <SwiperSlide key={game.id} className="text-sm">
+            <img src={game.image} className="rounded-[5px] mb-[9px]" />
+            <span className="block font-bold">{game.name}</span>
+            <span className="line-through text-line-t">{game.salePrice}</span>{' '}<span>{game.fullPrice}</span>
           </SwiperSlide>
         ))}
       </Swiper>
