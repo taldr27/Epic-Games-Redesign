@@ -28,10 +28,10 @@ const App = () => {
             path="/shop"
             element={
               <div className="flex">
-                <div>
+                <div className="w-64">
                   <SideBar />
                 </div>
-                <div className="w-full">
+                <div className="w-[83%]">
                   <TopBar />
                   <Body />
                 </div>
