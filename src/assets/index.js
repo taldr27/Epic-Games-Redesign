@@ -61,6 +61,12 @@ import rdr2U from '../assets/recentUpdated/rdr2U.svg';
 import hextech from '../assets/recentUpdated/hmU.svg';
 import ttW from '../assets/recentUpdated/ttW.svg';
 
+import gta from '../assets/bestFranchises/gta.svg';
+import resident from '../assets/bestFranchises/residentEvil.svg';
+import streetFighter from '../assets/bestFranchises/streetFighter.svg';
+import assasinsCreed from '../assets/bestFranchises/assasinsCreed.svg';
+import bf from '../assets/bestFranchises/battlefield.svg';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -113,4 +119,9 @@ export {
   rdr2U,
   hextech,
   ttW,
+  gta,
+  resident,
+  streetFighter,
+  assasinsCreed,
+  bf
 };

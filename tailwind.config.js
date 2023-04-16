@@ -21,6 +21,13 @@ export default {
         "purple-200": "#5847A3",
         "purple-300": "#423579",
         "line-t": "#949494",
+        gameColors: {
+          "first": "#6A3C86",
+          "second": "#2E2E2E",
+          "third": "#D9AC25",
+          "fourth": "#B6B4B4",
+          "fifth": "#104A82",
+        },
       },
       fontFamily: {
         'brutal': ['Brutal Type', 'sans-serif'],

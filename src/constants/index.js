@@ -35,6 +35,11 @@ import {
   rdr2U,
   hextech,
   ttW,
+  gta,
+  resident,
+  streetFighter,
+  assasinsCreed,
+  bf,
 } from '../assets';
 
 const platforms = [
@@ -413,4 +418,32 @@ const recentUpdated = [
   },
 ]
 
-export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated };
+const bestFranchises = [
+  {
+    name: "Grand Theft Auto",
+    image: gta,
+    color: "bg-gameColors-first"
+  },
+  {
+    name: "Resident Evil",
+    image: resident,
+    color: "bg-gameColors-second"
+  },
+  {
+    name: "Street Fighter",
+    image: streetFighter,
+    color: "bg-gameColors-third"
+  },
+  {
+    name: "Assasins Creed",
+    image: assasinsCreed,
+    color: "bg-gameColors-fourth"
+  },
+  {
+    name: "Battlefield",
+    image: bf,
+    color: "bg-gameColors-fifth"
+  },
+]
+
+export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated, bestFranchises };
