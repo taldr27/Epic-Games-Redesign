@@ -233,7 +233,7 @@ const freeGames = [
     name: "Naraka",
     image: naraka,
     date: "Gratis hasta el 25-Jul. a la(s) 10:00",
-    card: "GRATIS AHORA",
+    card: "PROXIMAMENTE",
     cardColor: "bg-secondary"
   },
 ]
