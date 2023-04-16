@@ -43,6 +43,13 @@ import horizon from '../assets/games/horizon.svg';
 
 import ctaCommunity from '../assets/ctaSeparate.png';
 
+import giftIco from '../assets/giftIco.svg';
+
+import dragonAI from '../assets/freeGames/dragonAI.svg';
+import killingF2 from '../assets/freeGames/killingF2.svg';
+import fallout4 from '../assets/freeGames/fallout4.svg';
+import naraka from '../assets/freeGames/naraka.svg';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -80,5 +87,10 @@ export {
   sifu,
   cyberpunkGame,
   horizon,
-  ctaCommunity
+  ctaCommunity,
+  giftIco,
+  dragonAI,
+  killingF2,
+  fallout4,
+  naraka
 };

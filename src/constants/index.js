@@ -22,6 +22,10 @@ import {
   sifu,
   cyberpunkGame,
   horizon,
+  dragonAI,
+  killingF2,
+  fallout4,
+  naraka,
 } from '../assets';
 
 const platforms = [
@@ -199,4 +203,39 @@ const saleGames = [
   },
 ]
 
-export { platforms, carouselImages, saleGames };
+const freeGames = [
+  {
+    id: 0,
+    name: "Dragon Age: Inquisition",
+    image: dragonAI,
+    date: "Gratis hasta el 25-Jul. a la(s) 10:00",
+    card: "GRATIS AHORA",
+    cardColor: "bg-blue-200"
+  },
+  {
+    id: 1,
+    name: "Killing Floor 2",
+    image: killingF2,
+    date: "Gratis hasta el 25-Jul. a la(s) 10:00",
+    card: "GRATIS AHORA",
+    cardColor: "bg-blue-200"
+  },
+  {
+    id: 2,
+    name: "Fallout 4",
+    image: fallout4,
+    date: "Gratis hasta el 25-Jul. a la(s) 10:00",
+    card: "PROXIMAMENTE",
+    cardColor: "bg-secondary"
+  },
+  {
+    id: 3,
+    name: "Naraka",
+    image: naraka,
+    date: "Gratis hasta el 25-Jul. a la(s) 10:00",
+    card: "GRATIS AHORA",
+    cardColor: "bg-secondary"
+  },
+]
+
+export { platforms, carouselImages, saleGames, freeGames };
