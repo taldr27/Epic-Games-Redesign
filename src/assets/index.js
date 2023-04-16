@@ -50,6 +50,12 @@ import killingF2 from '../assets/freeGames/killingF2.svg';
 import fallout4 from '../assets/freeGames/fallout4.svg';
 import naraka from '../assets/freeGames/naraka.svg';
 
+import fortniteCG from '../assets/communityGames/fortniteCG.svg';
+import lolCG from '../assets/communityGames/lolCG.svg';
+import rocketCG from '../assets/communityGames/rocketCG.svg';
+import rssCG from '../assets/communityGames/rssCG.svg';
+import gtaCG from '../assets/communityGames/gtaCG.svg';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -92,5 +98,10 @@ export {
   dragonAI,
   killingF2,
   fallout4,
-  naraka
+  naraka,
+  fortniteCG,
+  lolCG,
+  rocketCG,
+  rssCG,
+  gtaCG
 };

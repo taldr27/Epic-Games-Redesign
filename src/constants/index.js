@@ -26,6 +26,11 @@ import {
   killingF2,
   fallout4,
   naraka,
+  fortniteCG,
+  lolCG,
+  rocketCG,
+  rssCG,
+  gtaCG,
 } from '../assets';
 
 const platforms = [
@@ -135,7 +140,7 @@ const saleGames = [
     image: sifu,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
-    discount: "50%"
+    discount: "55%"
   },
   {
     id: 3,
@@ -143,7 +148,7 @@ const saleGames = [
     image: cyberpunkGame,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
-    discount: "50%"
+    discount: "30%"
   },
   {
     id: 4,
@@ -151,7 +156,7 @@ const saleGames = [
     image: horizon,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
-    discount: "50%"
+    discount: "20%"
   },
   {
     id: 5,
@@ -159,7 +164,7 @@ const saleGames = [
     image: borderlands3,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
-    discount: "50%"
+    discount: ""
   },
   {
     id: 6,
@@ -167,7 +172,7 @@ const saleGames = [
     image: sifu,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
-    discount: "50%"
+    discount: "70%"
   },
   {
     id: 7,
@@ -238,4 +243,87 @@ const freeGames = [
   },
 ]
 
-export { platforms, carouselImages, saleGames, freeGames };
+const communityGames = [
+  {
+    id: 0,
+    name: "Fortnite",
+    image: fortniteCG,
+    fullPrice: "Gratis",
+    salePrice: "",
+    discount: ""
+  },
+  {
+    id: 1,
+    name: "League of Legends",
+    image: lolCG,
+    fullPrice: "Gratis",
+    salePrice: "",
+    discount: ""
+  },
+  {
+    id: 2,
+    name: "Rocket League",
+    image: rocketCG,
+    fullPrice: "Gratis",
+    salePrice: "",
+    discount: ""
+  },
+  {
+    id: 3,
+    name: "Rainbow Six Siege",
+    image: rssCG,
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "30%"
+  },
+  {
+    id: 4,
+    name: "Grand Theft Auto V",
+    image: gtaCG,
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "20%"
+  },
+  {
+    id: 5,
+    name: "Fortnite",
+    image: fortniteCG,
+    fullPrice: "Gratis",
+    salePrice: "",
+    discount: ""
+  },
+  {
+    id: 6,
+    name: "League of Legends",
+    image: lolCG,
+    fullPrice: "Gratis",
+    salePrice: "",
+    discount: ""
+  },
+  {
+    id: 7,
+    name: "Rocket League",
+    image: rocketCG,
+    fullPrice: "Gratis",
+    salePrice: "",
+    discount: ""
+  },
+  {
+    id: 8,
+    name: "Rainbow Six Siege",
+    image: rssCG,
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "30%"
+  },
+  {
+    id: 9,
+    name: "Grand Theft Auto V",
+    image: gtaCG,
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "20%"
+  },
+]
+
+export { platforms, carouselImages, saleGames, freeGames, communityGames };
