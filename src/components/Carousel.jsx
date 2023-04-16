@@ -44,7 +44,7 @@ const Carousel = () => {
             <span className="font-bold absolute left-[61px] top-[64%]">FREE</span>
           )}
           <div className="absolute left-[61px] top-[74%] text-sm">
-            <button className="bg-white text-black w-[151px] h-[53px] mr-[10px]">¡AHORRA HOY!</button>
+            <button className="bg-white text-black w-[151px] h-[53px] mr-[10px] font-bold">¡AHORRA HOY!</button>
             <button className="bg-transparent border-2 text-white w-[211px] h-[53px]">¡A LA LISTA DE DESEOS!</button>
           </div>
         </div>

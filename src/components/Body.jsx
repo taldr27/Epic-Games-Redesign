@@ -3,6 +3,7 @@ import { SectionWrapper } from '../wrapper'
 import BodyBar from './BodyBar';
 import Carousel from './Carousel';
 import EditorSales from './EditorSales';
+import CtaCommunity from './CtaCommunity';
 
 const Body = () => {
   return (
@@ -10,6 +11,7 @@ const Body = () => {
       <BodyBar />
       <Carousel />
       <EditorSales />
+      <CtaCommunity />
     </div>
   )
 }

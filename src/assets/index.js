@@ -41,6 +41,8 @@ import sifu from '../assets/games/sifu.svg';
 import cyberpunkGame from '../assets/games/cyberpunk.svg';
 import horizon from '../assets/games/horizon.svg';
 
+import ctaCommunity from '../assets/ctaSeparate.png';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -77,5 +79,6 @@ export {
   borderlands3,
   sifu,
   cyberpunkGame,
-  horizon
+  horizon,
+  ctaCommunity
 };

@@ -81,3 +81,6 @@
   opacity: 1;
 }
 
+.blue-gradient {
+  background-image: linear-gradient(to right, #0074E4B8, #4618AC);
+}
