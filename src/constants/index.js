@@ -40,6 +40,9 @@ import {
   streetFighter,
   assasinsCreed,
   bf,
+  fortniteEvent,
+  lolEvent,
+  tftEvent,
 } from '../assets';
 
 const platforms = [
@@ -446,4 +449,43 @@ const bestFranchises = [
   },
 ]
 
-export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated, bestFranchises };
+const gameEvents = [
+  {
+    id: 0,
+    title: "Fortnite: Carrera de armas",
+    description: "Compite entre tus amigos para obtener recompensas unicas.",
+    image: fortniteEvent
+  },
+  {
+    id: 1,
+    title: "League of Legends: Mes del orgullo",
+    description: "Únete a nosotros para celebrar el Orgullo con nuestra comunidad LGBTQIA+.",
+    image: lolEvent,
+  },
+  {
+    id: 2,
+    title: "Teamfight Tactics: Odisea",
+    description: "Prueba y recluta a nuevos campeones de otros mundos a las arenas.",
+    image: tftEvent
+  },
+  {
+    id: 3,
+    title: "Fortnite: Carrera de armas",
+    description: "Compite entre tus amigos para obtener recompensas unicas.",
+    image: fortniteEvent
+  },
+  {
+    id: 4,
+    title: "League of Legends: Mes del orgullo",
+    description: "Únete a nosotros para celebrar el Orgullo con nuestra comunidad LGBTQIA+.",
+    image: lolEvent,
+  },
+  {
+    id: 5,
+    title: "Teamfight Tactics: Odisea",
+    description: "Prueba y recluta a nuevos campeones de otros mundos a las arenas.",
+    image: tftEvent
+  },
+]
+
+export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated, bestFranchises, gameEvents };

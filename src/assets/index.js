@@ -67,6 +67,11 @@ import streetFighter from '../assets/bestFranchises/streetFighter.svg';
 import assasinsCreed from '../assets/bestFranchises/assasinsCreed.svg';
 import bf from '../assets/bestFranchises/battlefield.svg';
 
+import fortniteEvent from '../assets/events/fortniteEvent.svg';
+import lolEvent from '../assets/events/lolEvent.svg';
+import tftEvent from '../assets/events/tftEvent.svg';
+import shadowEvent from '../assets/events/shadow.svg';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -123,5 +128,9 @@ export {
   resident,
   streetFighter,
   assasinsCreed,
-  bf
+  bf,
+  fortniteEvent,
+  lolEvent,
+  tftEvent,
+  shadowEvent
 };

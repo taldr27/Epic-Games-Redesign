@@ -1,11 +1,10 @@
-import React from 'react';
-import { circleArrowLeft, circleArrowRight, rightArrow } from '../assets';
+import React from 'react'
+import { circleArrowLeft, circleArrowRight, rightArrow, shadowEvent } from '../assets';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import { A11y, Navigation } from 'swiper';
 
-const SlickSlider = ({ games, title }) => {
-
+const SmallSlider = ({title, games}) => {
   return (
     <div>
       <div className="mt-[42px] text-xl font-bold flex justify-between mb-5">
@@ -21,7 +20,7 @@ const SlickSlider = ({ games, title }) => {
       <Swiper
         modules={[Navigation, A11y]}
         spaceBetween={9}
-        slidesPerView={5}
+        slidesPerView={3}
         // navigation={{
         //   nextEl: ".image-swiper-button-next",
         //   prevEl: ".image-swiper-button-prev",
@@ -32,14 +31,16 @@ const SlickSlider = ({ games, title }) => {
         {games.map((game) => (
           <SwiperSlide key={game.id} className="text-sm relative">
             <img src={game.image} className="rounded-[5px] mb-[9px]" />
-            {game.discount ? <button className="w-[52.94px] h-[30px] text-xs font-bold rounded-[5px] bg-blue-200 absolute bottom-[59px] left-[11.65px]">{game.discount }</button> : ''}
-            <span className="block font-bold">{game.name}</span>
-            <span className="line-through text-line-t">{game.salePrice}</span>{' '}<span>{game.fullPrice}</span>
+            <img src={shadowEvent} className="absolute inset-0 h-full" />
+            <div className="absolute left-[24.85px] bottom-[22px]">
+              <span className="block text-xl font-bold">{game.title}</span>
+              <span className="text-base">{game.description}</span>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
   );
-};
+}
 
-export default SlickSlider;
+export default SmallSlider
