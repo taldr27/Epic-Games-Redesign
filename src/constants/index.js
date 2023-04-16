@@ -18,6 +18,10 @@ import {
   fortniteCard,
   rdr2Card,
   farcry6,
+  borderlands3,
+  sifu,
+  cyberpunkGame,
+  horizon,
 } from '../assets';
 
 const platforms = [
@@ -104,7 +108,7 @@ const carouselImages = [
   }
 ]
 
-const games = [
+const saleGames = [
   {
     id: 0,
     name: "Farcry 6",
@@ -115,30 +119,70 @@ const games = [
   },
   {
     id: 1,
-    name: "Farcry 6",
-    image: farcry6,
+    name: "Borderlands 3",
+    image: borderlands3,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
     discount: "50%"
   },
   {
     id: 2,
-    name: "Farcry 6",
-    image: farcry6,
+    name: "Sifu",
+    image: sifu,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
     discount: "50%"
   },
   {
     id: 3,
-    name: "Farcry 6",
-    image: farcry6,
+    name: "Cyberpunk 2077",
+    image: cyberpunkGame,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
     discount: "50%"
   },
   {
     id: 4,
+    name: "Horizon Zero Down",
+    image: horizon,
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "50%"
+  },
+  {
+    id: 5,
+    name: "Borderlands 3",
+    image: borderlands3,
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "50%"
+  },
+  {
+    id: 6,
+    name: "Sifu",
+    image: sifu,
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "50%"
+  },
+  {
+    id: 7,
+    name: "Cyberpunk 2077",
+    image: cyberpunkGame,
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "50%"
+  },
+  {
+    id: 8,
+    name: "Horizon Zero Down",
+    image: horizon,
+    fullPrice: "PEN 199.99",
+    salePrice: "PEN 99.99",
+    discount: "50%"
+  },
+  {
+    id: 9,
     name: "Farcry 6",
     image: farcry6,
     fullPrice: "PEN 199.99",
@@ -146,13 +190,13 @@ const games = [
     discount: "50%"
   },
   {
-    id: 5,
+    id: 10,
     name: "Farcry 6",
     image: farcry6,
     fullPrice: "PEN 199.99",
     salePrice: "PEN 99.99",
     discount: "50%"
-  }
+  },
 ]
 
-export { platforms, carouselImages, games };
+export { platforms, carouselImages, saleGames };

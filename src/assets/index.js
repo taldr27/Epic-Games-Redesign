@@ -36,6 +36,10 @@ import fortniteCard from '../assets/carousel/cards/fortniteCard.svg';
 import rdr2Card from '../assets/carousel/cards/rdr2Card.svg';
 
 import farcry6 from '../assets/games/farcry6.svg';
+import borderlands3 from '../assets/games/borderlands3.svg';
+import sifu from '../assets/games/sifu.svg';
+import cyberpunkGame from '../assets/games/cyberpunk.svg';
+import horizon from '../assets/games/horizon.svg';
 
 export {
   rightArrow,
@@ -69,5 +73,9 @@ export {
   fgCard,
   fortniteCard,
   rdr2Card,
-  farcry6
+  farcry6,
+  borderlands3,
+  sifu,
+  cyberpunkGame,
+  horizon
 };

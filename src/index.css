@@ -12,6 +12,9 @@
   /* border: 1px solid red; */
 }
 
+.swiper-button-disabled {
+  opacity: 0.5;
+}
 @font-face {
   font-family: 'Brutal Type';
   src: url('./fonts/BrutalType.ttf') format('truetype');
