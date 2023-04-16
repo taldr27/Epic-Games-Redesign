@@ -14,8 +14,8 @@ const SlickSlider = ({ games, title }) => {
           <img className="mt-1" src={rightArrow} />
         </div>
         <div className="flex gap-2">
-          <img src={circleArrowLeft} className="cursor-pointer image-swiper-button-prev"/>
-          <img src={circleArrowRight} className="cursor-pointer image-swiper-button-next" />
+          <img src={circleArrowLeft} className="bg-white rounded-full cursor-pointer image-swiper-button-prev"/>
+          <img src={circleArrowRight} className="bg-white rounded-full cursor-pointer image-swiper-button-next" />
         </div>
       </div>
       <Swiper
