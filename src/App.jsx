@@ -3,8 +3,9 @@ import { useState } from "react";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import TopBar from "./components/TopBar";
-import Body from "./components/Body";
 import SideBar from "./components/SideBar";
+import MyGames from "./components/MyGames/MyGames";
+import BodyShop from "./components/BodyShop";
 
 const App = () => {
   const [login, setLogin] = useState(true);
@@ -33,8 +34,16 @@ const App = () => {
                 </div>
                 <div className="w-[83%]">
                   <TopBar />
-                  <Body />
+                  <BodyShop />
                 </div>
+              </div>
+            }
+          />
+          <Route
+            path="/my-games"
+            element={
+              <div className="">
+                <MyGames />
               </div>
             }
           />

@@ -1,6 +1,6 @@
 import React from 'react'
 import { SectionWrapper } from '../wrapper'
-import BodyBar from './BodyBar';
+import BodyShopBar from './BodyShopBar';
 import Carousel from './Carousel';
 import EditorSales from './EditorSales';
 import CtaCommunity from './CtaCommunity';
@@ -13,7 +13,7 @@ import RecentUpdated from './RecentUpdated';
 const Body = () => {
   return (
     <div className="mt-5 mb-[79px]">
-      <BodyBar />
+      <BodyShopBar />
       <Carousel />
       <EditorSales />
       <CtaCommunity />
