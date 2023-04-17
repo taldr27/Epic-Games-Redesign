@@ -20,13 +20,27 @@ const SlickSlider = ({ games, title }) => {
       </div>
       <Swiper
         modules={[Navigation, A11y]}
-        spaceBetween={9}
-        slidesPerView={5}
         // navigation={{
         //   nextEl: ".image-swiper-button-next",
         //   prevEl: ".image-swiper-button-prev",
         //   disabledClass: "swiper-button-disabled"
         // }}
+        breakpoints={
+          {
+            500: {
+              slidesPerView: 3,
+              spaceBetween: 5
+            },
+            1200: {
+              slidesPerView: 5,
+              spaceBetween: 20
+            },
+            1500: {
+              slidesPerView: 6,
+              spaceBetween: 20
+            }
+          }
+        }
         className=" border-gray-300 mx-auto"
       >
         {games.map((game) => (

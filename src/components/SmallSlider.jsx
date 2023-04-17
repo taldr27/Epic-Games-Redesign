@@ -19,8 +19,22 @@ const SmallSlider = ({title, games}) => {
       </div>
       <Swiper
         modules={[Navigation, A11y]}
-        spaceBetween={9}
-        slidesPerView={3}
+        breakpoints={
+          {
+            500: {
+              slidesPerView: 2,
+              spaceBetween: 5
+            },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            1500: {
+              slidesPerView: 4,
+              spaceBetween: 20
+            }
+          }
+        }
         // navigation={{
         //   nextEl: ".image-swiper-button-next",
         //   prevEl: ".image-swiper-button-prev",

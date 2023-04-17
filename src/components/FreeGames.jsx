@@ -7,16 +7,16 @@ const FreeGames = () => {
   const rightGames = freeGames.slice(2, 4);
 
 return (
-  <div className="w-full bg-secondary rounded-[5px] h-[552px] mt-10 pl-[21px] pr-[24px]">
+  <div className="w-full bg-secondary rounded-[5px] h-[552px] 2xl:h-[680px] mt-10 pl-[21px] 2xl:pl-[37px] pr-[24px]">
     <div className="flex gap-[13px] items-center pt-[23.5px] mb-5">
       <img src={giftIco} />
       <span className="text-xl font-bold">Juegos Gratuitos</span>
     </div>
     <div className="flex gap-5 text-sm">
       <div className="flex gap-5 relative">
-        {leftGames.map((game, index) => (
-          <div key={game.id} style={{ position: 'relative' }}>
-            <img src={game.image} />
+        {leftGames.map((game) => (
+          <div key={game.id} className="relative 2xl:w-11/12">
+            <img src={game.image} className="2xl:w-[60em]" />
             <div className="absolute top-[15px] left-[19px]">
               <button className={`${game.cardColor} w-[121px] h-[34.76px] absolute rounded-[5px] text-sm font-medium text-center`}>
                 {game.card}
@@ -27,10 +27,10 @@ return (
           </div>
         ))}
       </div>
-      <div className="flex flex-col gap-4 relative">
-        {rightGames.map((game, index) => (
+      <div className="flex flex-col gap-4 relative 2xl:w-9/12">
+        {rightGames.map((game) => (
           <div key={game.id} style={{ position: 'relative' }}>
-            <img src={game.image} className="" />
+            <img src={game.image} className="2xl:w-[40em]" />
             <div className="absolute top-[15.65px] left-[19px]">
               <button className={`${game.cardColor} w-[121px] h-[34.76px] absolute rounded-[5px] text-sm font-medium text-center`}>
                 {game.card}
