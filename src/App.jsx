@@ -2,10 +2,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import TopBar from "./components/TopBar";
-import SideBar from "./components/SideBar";
 import MyGames from "./components/MyGames/MyGames";
 import BodyShop from "./components/BodyShop";
+import SideBarAndBody from "./components/SideBarAndBody";
+import CommunityBody from "./components/Community/CommunityBody";
+import UnrealBody from "./components/Unreal/UnrealBody";
 
 const App = () => {
   const [login, setLogin] = useState(true);
@@ -19,38 +20,35 @@ const App = () => {
           <Route
             path="/"
             element={
-              <div className="bg-login-background bg-cover bg-no-repeat bg-center
-                    w-full h-screen flex justify-center items-center">
-                {login ? <Login onToggleRegister={handleRegister} /> : <Register onToggleRegister={handleRegister}/>}
+              <div className="bg-login-background bg-cover bg-no-repeat bg-center w-full h-screen flex justify-center items-center">
+                {login ? (
+                  <Login onToggleRegister={handleRegister} />
+                ) : (
+                  <Register onToggleRegister={handleRegister} />
+                )}
               </div>
             }
           />
           <Route
             path="/shop"
-            element={
-              <div className="flex">
-                <div className="w-64">
-                  <SideBar />
-                </div>
-                <div className="w-[83%]">
-                  <TopBar />
-                  <BodyShop />
-                </div>
-              </div>
-            }
+            element={<SideBarAndBody><BodyShop /></SideBarAndBody>}
           />
           <Route
             path="/my-games"
-            element={
-              <div className="">
-                <MyGames />
-              </div>
-            }
+            element={<SideBarAndBody><MyGames /></SideBarAndBody>}
+          />
+          <Route
+            path="/community"
+            element={<SideBarAndBody><CommunityBody/></SideBarAndBody>}
+          />
+          <Route
+            path="/unreal"
+            element={<SideBarAndBody><UnrealBody /></SideBarAndBody>}
           />
         </Routes>
       </BrowserRouter>
     </div>
-  )
-}
+  );
+};
 
 export default App;
