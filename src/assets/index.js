@@ -20,11 +20,11 @@ import cart from '../assets/cart.svg';
 import bell from '../assets/bell.svg';
 import friends from '../assets/friends.svg';
 
-import cyberpunk from '../assets/carousel/cyberpunk.svg';
-import fallguys from '../assets/carousel/fallguys.svg';
-import ffa from '../assets/carousel/ffa.svg';
-import fortnite from '../assets/carousel/fortnite.svg';
-import rdr2 from '../assets/carousel/rdr2.svg';
+import cyberpunk from '../assets/carousel/cyberpunk.webp';
+import fallguys from '../assets/carousel/fallguys.webp';
+import ffa from '../assets/carousel/ffa.webp';
+import fortnite from '../assets/carousel/fortnite.webp';
+import rdr2 from '../assets/carousel/rdr2.webp';
 
 import ffaIco from '../assets/carousel/ffaIco.svg';
 import shadow from '../assets/carousel/shadow.svg';
@@ -35,11 +35,11 @@ import fgCard from '../assets/carousel/cards/fgCard.svg';
 import fortniteCard from '../assets/carousel/cards/fortniteCard.svg';
 import rdr2Card from '../assets/carousel/cards/rdr2Card.svg';
 
-import farcry6 from '../assets/games/farcry6.svg';
+import farcry6 from '../assets/games/farcry6.webp';
 import borderlands3 from '../assets/games/borderlands3.svg';
-import sifu from '../assets/games/sifu.svg';
+import sifu from '../assets/games/sifu.webp';
 import cyberpunkGame from '../assets/games/cyberpunk.svg';
-import horizon from '../assets/games/horizon.svg';
+import horizon from '../assets/games/horizon.webp';
 
 import ctaCommunity from '../assets/ctaSeparate.png';
 
@@ -50,16 +50,16 @@ import killingF2 from '../assets/freeGames/killingF2.svg';
 import fallout4 from '../assets/freeGames/fallout4.svg';
 import naraka from '../assets/freeGames/naraka.svg';
 
-import fortniteCG from '../assets/communityGames/fortniteCG.svg';
-import lolCG from '../assets/communityGames/lolCG.svg';
-import rocketCG from '../assets/communityGames/rocketCG.svg';
-import rssCG from '../assets/communityGames/rssCG.svg';
-import gtaCG from '../assets/communityGames/gtaCG.svg';
+import fortniteCG from '../assets/communityGames/fortniteCG.webp';
+import lolCG from '../assets/communityGames/lolCG.webp';
+import rocketCG from '../assets/communityGames/rocketCG.webp';
+import rssCG from '../assets/communityGames/rssCG.webp';
+import gtaCG from '../assets/communityGames/gtaCG.webp';
 
-import neverwinter from '../assets/recentUpdated/neverwinter.svg';
-import rdr2U from '../assets/recentUpdated/rdr2U.svg';
-import hextech from '../assets/recentUpdated/hmU.svg';
-import ttW from '../assets/recentUpdated/ttW.svg';
+import neverwinter from '../assets/recentUpdated/neverwinter.webp';
+import rdr2U from '../assets/recentUpdated/rdr2U.webp';
+import hextech from '../assets/recentUpdated/hmU.webp';
+import ttW from '../assets/recentUpdated/ttW.webp';
 
 import gta from '../assets/bestFranchises/gta.svg';
 import resident from '../assets/bestFranchises/residentEvil.svg';
