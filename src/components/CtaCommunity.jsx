@@ -9,7 +9,7 @@ const CtaCommunity = () => {
         <span className="leading-5">Mira, crea y comparte contenido de tus juegos favoritos</span>
         <button className="bg-white text-black w-[151px] h-[53px] mr-[10px] font-bold">Explorar</button>
       </div>
-      <img src={ctaCommunity} className="h-[257px] self-end mr-[67.37px]" />
+      <img src={ctaCommunity} alt='ctaCommunity' className="h-[257px] self-end mr-[67.37px]" />
     </div>
   )
 }

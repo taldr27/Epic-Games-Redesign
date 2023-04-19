@@ -44,7 +44,7 @@ const SmallSlider = ({title, games}) => {
       >
         {games.map((game) => (
           <SwiperSlide key={game.id} className="text-sm relative">
-            <img src={game.image} className="rounded-[5px] mb-[9px]" />
+            <img src={game.image} alt={game.title} className="rounded-[5px] mb-[9px]" />
             <img src={shadowEvent} className="absolute inset-0 h-full" />
             <div className="absolute left-[24.85px] bottom-[22px]">
               <span className="block text-xl font-bold">{game.title}</span>

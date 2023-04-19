@@ -27,7 +27,7 @@ const Register = ({ onToggleRegister }) => {
   return (
       <div className="bg-secondary w-12 sm:w-[480px] px-6 py-10 rounded-[15px]">
         <div className="flex flex-col items-center font-bold gap-1">
-          <img src={EpicLogo} />
+          <img src={EpicLogo} alt='epic-logo' />
           <span className="mt-4">Registrarse en Epic Games</span>
         </div>
         <div>
@@ -107,7 +107,7 @@ const Register = ({ onToggleRegister }) => {
             <div className="flex gap-[10px]">
               {platforms.map((platform) => (
                 <a href="#" key={platform.name}>
-                  <img src={platform.image} />
+                  <img src={platform.image} alt={platform.name} />
                 </a>
               ))}
             </div>
