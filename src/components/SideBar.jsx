@@ -1,36 +1,44 @@
 import React, { useState } from 'react'
 import { EpicLogo, community, games, shop_ico, unreal } from '../assets'
-import MyGames from './MyGames/MyGames';
-import BodyShop from './BodyShop';
+import { useNavigate } from 'react-router-dom';
 
 const SideBar = () => {
-  const [activeMenu, setActiveMenu] = useState("tienda");
+  const navigate = useNavigate();
+  const [selected, setSelected] = useState("shop");
 
-  const handleMenuClick = (menu) => {
-    setActiveMenu(menu);
-    console.log(menu);
+  const handleShopClick = () => {
+    navigate('/shop');
+    setSelected("shop");
   };
 
-  let content = null;
-  if (activeMenu === "shop") {
-    content = <BodyShop />;
-  } else if (activeMenu === "games") {
-    content = <MyGames />;
-  }
+  const handleGamesClick = () => {
+    navigate('/my-games');
+    setSelected("my-games");
+  };
+
+  const handleCommunityClick = () => {
+    navigate('/community');
+    setSelected("community");
+  };
+
+  const handleUnrealClick = () => {
+    navigate('/unreal');
+    setSelected("unreal");
+  };
 
   return (
     <div className="h-screen ml-5 w-[217px] mt-[51px]">
       <div className="flex justify-center mb-[28.09px]">
-        <img src={EpicLogo} />
+        <img src={EpicLogo} alt='epic-logo' />
       </div>
       <div className="flex flex-col items-center">
-        <span className="flex gap-[12.34px] p-[17.91px] bg-secondary w-full rounded-[5px]" onClick={() => handleMenuClick("shop")}><img src={shop_ico} />Tienda</span>
-        <span className="flex gap-[12.34px] p-[17.91px]  w-full" onClick={() => handleMenuClick("games")}><img src={games} />Mis Juegos</span>
-        <span className="flex gap-[12.34px] p-[17.91px]  w-full"><img src={community} />Comunidad</span>
-        <span className="flex gap-[12.34px] p-[17.91px]  w-full"><img src={unreal} />Unreal Engine</span>
+        <span className={`flex gap-[12.34px] p-[17.91px] ${selected === "shop" ? "bg-secondary" : ""} w-full rounded-[5px] cursor-pointer`} onClick={handleShopClick}><img src={shop_ico} />Tienda</span>
+        <span className={`flex gap-[12.34px] p-[17.91px] ${selected === "my-games" ? "bg-secondary" : ""} w-full cursor-pointer`}onClick={handleGamesClick}><img src={games} />Mis Juegos</span>
+        <span className={`flex gap-[12.34px] p-[17.91px] ${selected === "community" ? "bg-secondary" : ""} w-full cursor-pointer`} onClick={handleCommunityClick}><img src={community} />Comunidad</span>
+        <span className={`flex gap-[12.34px] p-[17.91px] ${selected === "unreal" ? "bg-secondary" : ""} w-full cursor-pointer`} onClick={handleUnrealClick}><img src={unreal} />Unreal Engine</span>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default SideBar;
