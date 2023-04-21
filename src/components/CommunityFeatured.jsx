@@ -5,7 +5,7 @@ import { communityGames } from '../constants'
 const CommunityFeatured = () => {
   return (
     <div>
-      <SlickSlider games={communityGames} title={"Destacado por la comunidad"} />
+      <SlickSlider games={communityGames} title={"Destacado por la comunidad"} arrows={["cFleft", "cFright"]} />
     </div>
   )
 }

@@ -5,7 +5,7 @@ import { saleGames } from '../constants';
 const EditorSales = () => {
   return (
     <div>
-      <SlickSlider games={saleGames} title={"Ofertas del Editor"} />
+      <SlickSlider games={saleGames} title={"Ofertas del Editor"} arrows={["eSleft", "eSright"]} />
     </div>
   )
 }

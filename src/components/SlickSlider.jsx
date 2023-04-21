@@ -4,27 +4,27 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import { A11y, Navigation } from 'swiper';
 
-const SlickSlider = ({ games, title }) => {
-
+const SlickSlider = ({ games, title, arrows }) => {
+console.log(arrows);
   return (
     <div>
       <div className="mt-[42px] text-xl font-bold flex justify-between mb-5">
         <div className="flex items-center">
-          <span className="mr-[19px]">{title} (Arrows not working yet, try dragging!)</span>
+          <span className="mr-[19px]">{title}</span>
           <img className="mt-1" src={rightArrow} />
         </div>
         <div className="flex gap-2">
-          <img src={circleArrowLeft} className="bg-white rounded-full cursor-pointer image-swiper-button-prev"/>
-          <img src={circleArrowRight} className="bg-white rounded-full cursor-pointer image-swiper-button-next" />
+          <img src={circleArrowLeft} className={`bg-white rounded-full cursor-pointer ${arrows[0]}`}/>
+          <img src={circleArrowRight} className={`bg-white rounded-full cursor-pointer ${arrows[1]}`} />
         </div>
       </div>
       <Swiper
         modules={[Navigation, A11y]}
-        // navigation={{
-        //   nextEl: ".image-swiper-button-next",
-        //   prevEl: ".image-swiper-button-prev",
-        //   disabledClass: "swiper-button-disabled"
-        // }}
+        navigation={{
+          nextEl: `.${arrows[1]}`,
+          prevEl: `.${arrows[0]}`,
+          disabledClass: "swiper-button-disabled"
+        }}
         breakpoints={
           {
             500: {
