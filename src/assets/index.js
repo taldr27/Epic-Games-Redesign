@@ -72,6 +72,12 @@ import lolEvent from '../assets/events/lolEvent.svg';
 import tftEvent from '../assets/events/tftEvent.svg';
 import shadowEvent from '../assets/events/shadow.svg';
 
+// My games section
+
+import tombRaiderMG from '../assets/myGames/trMG.png';
+import spidermanMG from '../assets/myGames/spidermanMG.png';
+import fortniteMG from '../assets/myGames/fortniteMG.png';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -132,5 +138,8 @@ export {
   fortniteEvent,
   lolEvent,
   tftEvent,
-  shadowEvent
+  shadowEvent,
+  tombRaiderMG,
+  spidermanMG,
+  fortniteMG,
 };

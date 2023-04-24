@@ -43,6 +43,9 @@ import {
   fortniteEvent,
   lolEvent,
   tftEvent,
+  tombRaiderMG,
+  fortniteMG,
+  spidermanMG,
 } from '../assets';
 
 const platforms = [
@@ -488,4 +491,49 @@ const gameEvents = [
   },
 ]
 
-export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated, bestFranchises, gameEvents };
+const recentMyGames = [
+  {
+    id: 0,
+    title: "Shadow of the Tomb Raider",
+    weeklyPlayedTime: "3",
+    totalPlayedTime: "5",
+    image: tombRaiderMG
+  },
+  {
+    id: 1,
+    title: "Marvel's Spiderman Remastered",
+    weeklyPlayedTime: "5",
+    totalPlayedTime: "15",
+    image: spidermanMG
+  },
+  {
+    id: 2,
+    title: "Fortnite",
+    weeklyPlayedTime: "5",
+    totalPlayedTime: "34",
+    image: fortniteMG
+  },
+  {
+    id: 3,
+    title: "Shadow of the Tomb Raider",
+    weeklyPlayedTime: "3",
+    totalPlayedTime: "5",
+    image: tombRaiderMG
+  },
+  {
+    id: 4,
+    title: "Marvel's Spiderman Remastered",
+    weeklyPlayedTime: "5",
+    totalPlayedTime: "15",
+    image: spidermanMG
+  },
+  {
+    id: 5,
+    title: "Fortnite",
+    weeklyPlayedTime: "5",
+    totalPlayedTime: "34",
+    image: fortniteMG
+  },
+]
+
+export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated, bestFranchises, gameEvents, recentMyGames };
