@@ -5,7 +5,6 @@ import 'swiper/swiper-bundle.min.css';
 import { A11y, Navigation } from 'swiper';
 
 const SlickSlider = ({ games, title, arrows }) => {
-console.log(arrows);
   return (
     <div>
       <div className="mt-[42px] text-xl font-bold flex justify-between mb-5">

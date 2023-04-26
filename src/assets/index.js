@@ -1,6 +1,7 @@
 import rightArrow from '../assets/right_arrow.svg';
 import circleArrowRight from '../assets/arrow_right.svg';
 import circleArrowLeft from '../assets/arrow_left.svg';
+import downArrow from '../assets/Vector.png';
 
 import EpicLogo from '../assets/EpicLogo.svg';
 import google from '../assets/platforms/google1.svg';
@@ -82,6 +83,7 @@ export {
   rightArrow,
   circleArrowRight,
   circleArrowLeft,
+  downArrow,
   EpicLogo,
   google,
   fb,

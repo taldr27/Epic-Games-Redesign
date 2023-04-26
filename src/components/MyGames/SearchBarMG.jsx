@@ -1,22 +1,22 @@
 import React from 'react'
+import { IoIosArrowDown } from 'react-icons/io'
+import { RxMagnifyingGlass } from 'react-icons/rx';
 
 const SearchBarMG = () => {
   return (
-    <div className="mt-11 mb-[29px] bg-slate-800 h-11 flex justify-between">
-      <ul className="flex">
-        <span>Ordenar por:</span>
-        <li><span> Orden Alfabetico</span> <span>Flecha</span></li>
-        <li> <span>Ver en:</span><span>Tarjetas</span><span>Flecha</span></li>
+    <div className="mt-11 mb-[29px] h-11 flex justify-between py-3 px-[10px]">
+      <ul className="flex items-center gap-2">
+        <span className="font-bold">Ordenar por:</span>
+        <li className="flex items-center"><span> Orden Alfabetico</span> <IoIosArrowDown className="ml-[15px] text-lg" /></li>
+        <span className="font-bold ml-[25px]">Ver en:</span>
+        <li className="flex items-center "> <span>Tarjetas</span><IoIosArrowDown className="ml-[15px] text-lg" /></li>
       </ul>
-      <ul className="flex">
-        <li><span>Lupa</span></li>
-        <li><span>Genero</span><span>Flecha</span></li>
-        <li><span>Caracteristicas</span><span>Flecha</span></li>
-        <li><span>Plataforma</span><span>Flecha</span></li>
-      </ul>
-       
-     
-      
+      <ul className="flex items-center">
+        <li><RxMagnifyingGlass className="text-2xl mr-[33px]" /></li>
+        <li className="flex items-center mr-[45px]"><span>Genero</span><IoIosArrowDown className="ml-[15px] text-lg" /></li>
+        <li className="flex items-center mr-[45px]"><span>Caracteristicas</span><IoIosArrowDown className="ml-[15px] text-lg" /></li>
+        <li className="flex items-center"><span>Plataforma</span><IoIosArrowDown className="ml-[15px] text-lg" /></li>
+      </ul>  
     </div>
   )
 }
