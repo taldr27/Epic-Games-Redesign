@@ -1,6 +1,6 @@
 import React from 'react'
-import { bestFranchises } from '../constants'
-import { rightArrow } from '../assets'
+import { bestFranchises } from '../../constants'
+import { rightArrow } from '../../assets'
 
 const BestFranchises = () => {
   return (

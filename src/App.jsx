@@ -3,7 +3,7 @@ import { useState } from "react";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import MyGames from "./components/MyGames/MyGames";
-import BodyShop from "./components/BodyShop";
+import BodyShop from "./components/Shop/BodyShop";
 import SideBarAndBody from "./components/SideBarAndBody";
 import CommunityBody from "./components/Community/CommunityBody";
 import UnrealBody from "./components/Unreal/UnrealBody";

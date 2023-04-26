@@ -1,6 +1,6 @@
 import React from 'react'
-import SlickSlider from './SlickSlider'
-import { communityGames } from '../constants'
+import SlickSlider from '../SlickSlider'
+import { communityGames } from '../../constants'
 
 const CommunityFeatured = () => {
   return (

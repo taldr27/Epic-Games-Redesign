@@ -1,6 +1,6 @@
 import React from 'react'
-import SlickSlider from './SlickSlider'
-import { recentUpdated } from '../constants'
+import SlickSlider from '../SlickSlider'
+import { recentUpdated } from '../../constants'
 
 const RecentUpdated = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ctaCommunity } from '../assets'
+import { ctaCommunity } from '../../assets'
 
 const CtaCommunity = () => {
   return (

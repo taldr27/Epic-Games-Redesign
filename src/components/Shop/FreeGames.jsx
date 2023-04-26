@@ -1,6 +1,6 @@
 import React from 'react'
-import { giftIco } from '../assets'
-import { freeGames } from '../constants';
+import { giftIco } from '../../assets'
+import { freeGames } from '../../constants';
 
 const FreeGames = () => {
   const leftGames = freeGames.slice(0, 2);

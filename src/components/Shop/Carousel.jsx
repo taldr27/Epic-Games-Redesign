@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { carouselImages } from '../constants'
-import { shadow } from '../assets';
+import { carouselImages } from '../../constants'
+import { shadow } from '../../assets';
 
 const Carousel = () => {
   const [imageIndex, setImageIndex] = useState(0);

@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionWrapper } from '../wrapper'
+import { SectionWrapper } from '../../wrapper';
 import BodyShopBar from './BodyShopBar';
 import Carousel from './Carousel';
 import EditorSales from './EditorSales';

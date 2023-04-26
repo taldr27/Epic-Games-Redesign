@@ -1,6 +1,6 @@
 import React from 'react'
-import SlickSlider from './SlickSlider'
-import { saleGames } from '../constants';
+import SlickSlider from '../SlickSlider'
+import { saleGames } from '../../constants';
 
 const EditorSales = () => {
   return (

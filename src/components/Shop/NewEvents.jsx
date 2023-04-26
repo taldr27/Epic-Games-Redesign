@@ -1,6 +1,6 @@
 import React from 'react'
-import { gameEvents } from '../constants'
-import SmallSlider from './SmallSlider'
+import { gameEvents } from '../../constants'
+import SmallSlider from '../SmallSlider'
 
 const NewEvents = () => {
   return (
