@@ -46,6 +46,13 @@ import {
   tombRaiderMG,
   fortniteMG,
   spidermanMG,
+  spiderMG,
+  controlMG,
+  amnesiaMG,
+  valorantMG,
+  dbdMG,
+  sottbMG,
+  fortMG,
 } from '../assets';
 
 const platforms = [
@@ -536,4 +543,103 @@ const recentMyGames = [
   },
 ]
 
-export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated, bestFranchises, gameEvents, recentMyGames };
+const myGames = [
+  {
+    id: 0,
+    img: sottbMG,
+    gameTitle: "Shadow Of The Tomb Raider",
+    status: "playable", 
+  },
+  {
+    id: 1,
+    img: spiderMG,
+    gameTitle: "Marvel’s Spiderman Remastered",
+    status: "playable", 
+  },
+  {
+    id: 2,
+    img: fortMG,
+    gameTitle: "Fortnite",
+    status: "playable", 
+  },
+  {
+    id: 3,
+    img: controlMG,
+    gameTitle: "Control",
+    status: "playable", 
+  },
+  {
+    id: 4,
+    img: amnesiaMG,
+    gameTitle: "Amnesia Rebirth",
+    status: "playable", 
+  },
+  {
+    id: 5,
+    img: valorantMG,
+    gameTitle: "Valorant",
+    status: "unnistalled", 
+  },
+  {
+    id: 6,
+    img: dbdMG,
+    gameTitle: "Dead by Daylight",
+    status: "unnistalled", 
+  },
+  { //////
+    id: 7,
+    img: sottbMG,
+    gameTitle: "Shadow Of The Tomb Raider",
+    status: "unnistalled", 
+  },
+  {
+    id: 8,
+    img: spiderMG,
+    gameTitle: "Marvel’s Spiderman Remastered",
+    status: "unnistalled", 
+  },
+  {
+    id: 9,
+    img: fortMG,
+    gameTitle: "Fortnite",
+    status: "unnistalled", 
+  },
+  {
+    id: 10,
+    img: controlMG,
+    gameTitle: "Control",
+    status: "unnistalled", 
+  },
+  {
+    id: 11,
+    img: amnesiaMG,
+    gameTitle: "Amnesia Rebirth",
+    status: "unnistalled", 
+  },
+  {
+    id: 12,
+    img: valorantMG,
+    gameTitle: "Valorant",
+    status: "unnistalled", 
+  },
+  {
+    id: 13,
+    img: dbdMG,
+    gameTitle: "Dead by Daylight",
+    status: "unnistalled", 
+  },
+  {
+    id: 14,
+    img: sottbMG,
+    gameTitle: "Shadow Of The Tomb Raider",
+    status: "unnistalled", 
+  },
+  {
+    id: 15,
+    img: spiderMG,
+    gameTitle: "Marvel’s Spiderman Remastered",
+    status: "unnistalled", 
+  },
+]
+
+export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated, bestFranchises, gameEvents, recentMyGames, myGames };

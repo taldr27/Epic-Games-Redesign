@@ -79,6 +79,14 @@ import tombRaiderMG from '../assets/myGames/trMG.png';
 import spidermanMG from '../assets/myGames/spidermanMG.png';
 import fortniteMG from '../assets/myGames/fortniteMG.png';
 
+import sottbMG from '../assets/myGames/myGames/sottbMG.svg';
+import spiderMG from '../assets/myGames/myGames/spidermanMG.svg';
+import fortMG from '../assets/myGames/myGames/fortMG.svg';
+import controlMG from '../assets/myGames/myGames/controlMG.svg';
+import amnesiaMG from '../assets/myGames/myGames/amnesiaMG.svg';
+import valorantMG from '../assets/myGames/myGames/valorantMG.svg';
+import dbdMG from '../assets/myGames/myGames/dbdMG.svg';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -144,4 +152,11 @@ export {
   tombRaiderMG,
   spidermanMG,
   fortniteMG,
+  sottbMG, 
+  spiderMG,
+  fortMG, 
+  controlMG, 
+  amnesiaMG, 
+  valorantMG, 
+  dbdMG,
 };

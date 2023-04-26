@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 const SideBar = () => {
   const navigate = useNavigate();
-  const [selected, setSelected] = useState("shop");
+  const defaultSelected = window.location.pathname === '/my-games' ? 'my-games' : 'shop';
+  const [selected, setSelected] = useState(defaultSelected);
 
   const handleShopClick = () => {
     navigate('/shop');
