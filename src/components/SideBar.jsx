@@ -33,9 +33,9 @@ const SideBar = () => {
         <img src={EpicLogo} alt='epic-logo' />
       </div>
       <div className="flex flex-col items-center">
-        <span className={`flex gap-[12.34px] p-[17.91px] ${selected === "shop" ? "bg-secondary" : ""} w-full rounded-[5px] cursor-pointer`} onClick={handleShopClick}><img src={shop_ico} />Tienda</span>
-        <span className={`flex gap-[12.34px] p-[17.91px] ${selected === "my-games" ? "bg-secondary" : ""} w-full cursor-pointer`}onClick={handleGamesClick}><img src={games} />Mis Juegos</span>
-        <span className={`flex gap-[12.34px] p-[17.91px] ${selected === "community" ? "bg-secondary" : ""} w-full cursor-pointer`} onClick={handleCommunityClick}><img src={community} />Comunidad</span>
+        <span className={`flex gap-[12.34px] p-[17.91px] ${selected === "shop" ? "bg-secondary" : ""} w-full rounded-[5px] cursor-pointer`} onClick={handleShopClick}><img src={shop_ico} />Shop</span>
+        <span className={`flex gap-[12.34px] p-[17.91px] ${selected === "my-games" ? "bg-secondary" : ""} w-full cursor-pointer`}onClick={handleGamesClick}><img src={games} />My Games</span>
+        <span className={`flex gap-[12.34px] p-[17.91px] ${selected === "community" ? "bg-secondary" : ""} w-full cursor-pointer`} onClick={handleCommunityClick}><img src={community} />Community</span>
         <span className={`flex gap-[12.34px] p-[17.91px] ${selected === "unreal" ? "bg-secondary" : ""} w-full cursor-pointer`} onClick={handleUnrealClick}><img src={unreal} />Unreal Engine</span>
       </div>
     </div>

@@ -10,11 +10,11 @@ const TopBar = () => {
     <div className="lg:flex justify-between mt-[68px]">
       <div className="flex items-center relative gap-[27px] w-[50%]">
         <AiOutlineLeft className="" />
-        <input className="rounded-[47px] w-full p-2 pl-[55px] placeholder:text-[16px]" placeholder="Buscar juegos, jugadores o contenido..." />
+        <input className="rounded-[47px] w-full p-2 pl-[55px] placeholder:text-[16px]" placeholder="Search games, users or content..." />
         <RxMagnifyingGlass className="absolute top-1/2 left-14 transform -translate-y-1/2 w-7 h-7 text-gray-400" />
       </div>
       <div className="flex items-center gap-[17px]">
-        <span>Lista de deseos</span>
+        <span>Wishlist</span>
         <div className="bg-white h-[30px] w-[0.1px]"></div>
         <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center justify-center">  
           <img src={cart} />

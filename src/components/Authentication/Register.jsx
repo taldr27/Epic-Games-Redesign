@@ -28,22 +28,22 @@ const Register = ({ onToggleRegister }) => {
       <div className="bg-secondary w-12 sm:w-[480px] px-6 py-10 rounded-[15px]">
         <div className="flex flex-col items-center font-bold gap-1">
           <img src={EpicLogo} alt='epic-logo' />
-          <span className="mt-4">Registrarse en Epic Games</span>
+          <span className="mt-4">Sign Up</span>
         </div>
         <div>
           <form className="my-8 flex flex-col">
             <div className="flex gap-[15px] mb-5">
               <input 
                 type="text"
-                name="nombre"
-                placeholder="Nombre"
+                name="name"
+                placeholder="First Name"
                 className="bg-secondary py-18 px-30 placeholder:text-white text-sm
                 text-white outlined-none border border-white w-[187px]"
               />
               <input 
                 type="text"
-                name="apellido"
-                placeholder="Apellido"
+                name="lastName"
+                placeholder="Last Name"
                 className="bg-secondary py-18 px-30 placeholder:text-white text-sm
                 text-white outlined-none border border-white w-full"
               />
@@ -52,7 +52,7 @@ const Register = ({ onToggleRegister }) => {
               <select
                 className="bg-secondary py-18 px-30 placeholder:text-white text-sm text-white 
                             appearance-none border border-white mb-5 pl-10 w-full">
-                <option value="">{`Pais`}</option>
+                <option value="">{`Country`}</option>
                 {countryList.map((country) => (
                   <option key={country.name}>{country.name}</option>
                 ))}
@@ -61,15 +61,15 @@ const Register = ({ onToggleRegister }) => {
             </div>
             <input 
               type="text"
-              name="name"
-              placeholder="Username"
+              name="username"
+              placeholder="Display Name"
               className="bg-secondary py-18 px-30 placeholder:text-white text-sm
               text-white outlined-none border border-white mb-5"
             />
             <input 
               type="email"
               name="email"
-              placeholder="Correo Electronico"
+              placeholder="Email Address"
               className="bg-secondary py-18 px-30 placeholder:text-white text-sm
               text-white outlined-none border border-white mb-5"
             />
@@ -77,7 +77,7 @@ const Register = ({ onToggleRegister }) => {
               <input 
                 type="password"
                 name="name"
-                placeholder="Contraseña"
+                placeholder="Password"
                 autoComplete="current-password"
                 className="bg-secondary py-18 px-30 placeholder:text-white text-sm
                 text-white outlined-none border border-white mb-6 w-full"
@@ -91,7 +91,7 @@ const Register = ({ onToggleRegister }) => {
                 className="bg-blue-200 py-18 px-135 outline-none w-full text-white text-sm font-bold
                 hover:bg-blue-100"
               >
-                REGISTRARSE
+                Sign Up
               </button>
             </Link>
           </form>
@@ -103,7 +103,7 @@ const Register = ({ onToggleRegister }) => {
             <a href="#" className="underline">Olvidé mi contraseña</a>
           </div> */}
           <div className="flex flex-col items-center justify-center my-8">
-            <span className="mb-[10px]">O registrate con:</span>
+            <span className="mb-[10px]">Or Sign Up With:</span>
             <div className="flex gap-[10px]">
               {platforms.map((platform) => (
                 <a href="#" key={platform.name}>
@@ -113,8 +113,8 @@ const Register = ({ onToggleRegister }) => {
             </div>
           </div>
           <div className="flex flex-col text-center text-sm mx-[51px]">
-            <p>¿Ya tienes una cuenta en Epic Games? <a className="underline font-bold" href="#" style={{ color }} onClick={handleRegister}>Inicia Sesion</a></p>
-            <a href="#" className="font-bold mt-[10px] underline">Politica de privacidad</a>
+            <p>Already have an Epic Games account? <a className="underline font-bold" href="#" style={{ color }} onClick={handleRegister}>Sign In</a></p>
+            <a href="#" className="font-bold mt-[10px] underline">Privacy Policy</a>
           </div>
         </div>
       </div>
