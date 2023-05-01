@@ -8,7 +8,7 @@ import PlayableGames from './PlayableGames';
 const MyGames = () => {
   return (
     <div className="mt-5">
-      <RecentGamesSlider title={"Reciente"} games={recentMyGames} arrows={["nEleft", "nEright"]} />
+      <RecentGamesSlider title={"Last Played Games"} games={recentMyGames} arrows={["nEleft", "nEright"]} />
       <SearchBarMG />
       <PlayableGames />
     </div>

@@ -5,7 +5,7 @@ import { recentUpdated } from '../../constants'
 const RecentUpdated = () => {
   return (
     <div>
-      <SlickSlider games={recentUpdated} title={"Actualizado recientemente"} arrows={["rUleft", "rUright"]} />
+      <SlickSlider games={recentUpdated} title={"Recently Updated"} arrows={["rUleft", "rUright"]} />
     </div>
   )
 }

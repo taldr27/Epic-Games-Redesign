@@ -235,32 +235,32 @@ const freeGames = [
     id: 0,
     name: "Dragon Age: Inquisition",
     image: dragonAI,
-    date: "Gratis hasta el 25-Jul. a la(s) 10:00",
-    card: "GRATIS AHORA",
+    date: "Free Now - July 25 at 10:00 AM",
+    card: "FREE NOW",
     cardColor: "bg-blue-200"
   },
   {
     id: 1,
     name: "Killing Floor 2",
     image: killingF2,
-    date: "Gratis hasta el 25-Jul. a la(s) 10:00",
-    card: "GRATIS AHORA",
+    date: "Free Now - July 25 at 10:00 AM",
+    card: "FREE NOW",
     cardColor: "bg-blue-200"
   },
   {
     id: 2,
     name: "Fallout 4",
     image: fallout4,
-    date: "Gratis hasta el 25-Jul. a la(s) 10:00",
-    card: "PROXIMAMENTE",
+    date: "Free Now - July 25 at 10:00 AM",
+    card: "COMMING SOON",
     cardColor: "bg-secondary"
   },
   {
     id: 3,
     name: "Naraka",
     image: naraka,
-    date: "Gratis hasta el 25-Jul. a la(s) 10:00",
-    card: "PROXIMAMENTE",
+    date: "Free Now - July 25 at 10:00 AM",
+    card: "COMMING SOON",
     cardColor: "bg-secondary"
   },
 ]
@@ -270,7 +270,7 @@ const communityGames = [
     id: 0,
     name: "Fortnite",
     image: fortniteCG,
-    fullPrice: "Gratis",
+    fullPrice: "Free",
     salePrice: "",
     discount: ""
   },
@@ -278,7 +278,7 @@ const communityGames = [
     id: 1,
     name: "League of Legends",
     image: lolCG,
-    fullPrice: "Gratis",
+    fullPrice: "Free",
     salePrice: "",
     discount: ""
   },
@@ -286,7 +286,7 @@ const communityGames = [
     id: 2,
     name: "Rocket League",
     image: rocketCG,
-    fullPrice: "Gratis",
+    fullPrice: "Free",
     salePrice: "",
     discount: ""
   },
@@ -310,7 +310,7 @@ const communityGames = [
     id: 5,
     name: "Fortnite",
     image: fortniteCG,
-    fullPrice: "Gratis",
+    fullPrice: "Free",
     salePrice: "",
     discount: ""
   },
@@ -318,7 +318,7 @@ const communityGames = [
     id: 6,
     name: "League of Legends",
     image: lolCG,
-    fullPrice: "Gratis",
+    fullPrice: "Free",
     salePrice: "",
     discount: ""
   },
@@ -326,7 +326,7 @@ const communityGames = [
     id: 7,
     name: "Rocket League",
     image: rocketCG,
-    fullPrice: "Gratis",
+    fullPrice: "Free",
     salePrice: "",
     discount: ""
   },
@@ -353,7 +353,7 @@ const recentUpdated = [
     id: 0,
     name: "Neverwinter",
     image: neverwinter,
-    fullPrice: "Gratis",
+    fullPrice: "Free",
     salePrice: "",
     discount: ""
   },
@@ -369,7 +369,7 @@ const recentUpdated = [
     id: 2,
     name: "Hextech Mayhem",
     image: hextech,
-    fullPrice: "Gratis",
+    fullPrice: "Free",
     salePrice: "",
     discount: ""
   },
@@ -393,7 +393,7 @@ const recentUpdated = [
     id: 5,
     name: "Neverwinter",
     image: neverwinter,
-    fullPrice: "Gratis",
+    fullPrice: "Free",
     salePrice: "",
     discount: ""
   },
@@ -409,7 +409,7 @@ const recentUpdated = [
     id: 7,
     name: "Hextech Mayhem",
     image: hextech,
-    fullPrice: "Gratis",
+    fullPrice: "Free",
     salePrice: "",
     discount: ""
   },

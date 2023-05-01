@@ -10,7 +10,7 @@ return (
   <div className="w-full bg-secondary rounded-[5px] h-[552px] 2xl:h-[680px] mt-10 pl-[21px] 2xl:pl-[37px] pr-[24px]">
     <div className="flex gap-[13px] items-center pt-[23.5px] mb-5">
       <img src={giftIco} alt='giftIco' />
-      <span className="text-xl font-bold">Juegos Gratuitos</span>
+      <span className="text-xl font-bold">Free Games</span>
     </div>
     <div className="flex gap-5 text-sm">
       <div className="flex gap-5 relative">

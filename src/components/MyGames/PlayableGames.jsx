@@ -15,7 +15,7 @@ const PlayableGames = () => {
                 {myGame.gameTitle.length > 12 ? `${myGame.gameTitle.slice(0, 11)}...` : myGame.gameTitle}
               </span><BiDotsHorizontalRounded className="absolute right-0 text-lg" />
             </div>
-              {myGame.status !== "playable" ? <div className="flex items-center gap-[9px] text-sm"><MdFileDownload /><span className="">Instalar</span></div> : <div className="flex items-center gap-[9px] text-sm"><FaPlay /><span className="">Jugar</span></div>}
+              {myGame.status !== "playable" ? <div className="flex items-center gap-[9px] text-sm"><MdFileDownload /><span className="">Install</span></div> : <div className="flex items-center gap-[9px] text-xs"><FaPlay /><span className="text-sm">Play</span></div>}
           </div>
         </div>
       ))}
