@@ -87,6 +87,9 @@ import amnesiaMG from '../assets/myGames/myGames/amnesiaMG.svg';
 import valorantMG from '../assets/myGames/myGames/valorantMG.svg';
 import dbdMG from '../assets/myGames/myGames/dbdMG.svg';
 
+import communityBG from '../assets/communityBG.svg';
+import shadowBG from '../assets/communityShadowBG.svg';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -159,4 +162,6 @@ export {
   amnesiaMG, 
   valorantMG, 
   dbdMG,
+  communityBG,
+  shadowBG,
 };

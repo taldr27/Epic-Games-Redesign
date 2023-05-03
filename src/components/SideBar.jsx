@@ -28,7 +28,7 @@ const SideBar = () => {
   };
 
   return (
-    <div className="h-screen ml-5 w-[217px] mt-[51px]">
+    <div className="h-screen ml-5 w-[217px] mt-[51px] fixed">
       <div className="flex justify-center mb-[28.09px]">
         <img src={EpicLogo} alt='epic-logo' />
       </div>

@@ -3,13 +3,19 @@ import TopBar from "./TopBar";
 
 const SideBarAndBody = ({ children }) => {
   return (
-    <div className="flex">
-      <div className="w-64">
-        <SideBar />
-      </div>
-      <div className="w-[83%]">
-        <TopBar />
-        {children}
+    <div className="">
+      <div className="flex">
+        <div className="w-64">
+          <SideBar />
+        </div>
+        <div className="w-[83%] flex flex-col">
+          <div className="fixed w-inherit z-50">
+            <TopBar />
+          </div>
+          <div className="mt-48">
+            {children}
+          </div>
+        </div>
       </div>
     </div>
   );

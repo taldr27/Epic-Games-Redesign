@@ -13,7 +13,6 @@ import RecentUpdated from './RecentUpdated';
 const Body = () => {
   return (
     <div className="mt-5 mb-[79px]">
-      <BodyShopBar />
       <Carousel />
       <EditorSales />
       <CtaCommunity />
