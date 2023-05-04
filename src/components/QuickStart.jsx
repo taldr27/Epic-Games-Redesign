@@ -16,7 +16,7 @@ const QuickStart = () => {
       <h2 className="font-medium text-sm leading-[17.25px] mb-5">INICIO RAPIDO</h2>
       <ul className="">
         {miniQuick.map((miniGame, index) => (
-          <li key={miniGame.id} className={`flex ${index === selected ? "bg-tertiary" : ""} items-center gap-2 p-2 rounded-md`} onMouseEnter={() => handleEnterChange(index)} onMouseLeave={() => handleOutChange(index)}>
+          <li key={miniGame.id} className={`flex ${index === selected ? "bg-tertiary" : ""} transition-colors duration-500 items-center gap-2 p-2 rounded-md`} onMouseEnter={() => handleEnterChange(index)} onMouseLeave={handleOutChange}>
             <img src={miniGame.img} />
             <div>
               <span>{miniGame.name.length > 12 ? `${miniGame.name.slice(0, 16)}...` : miniGame.name}</span>
