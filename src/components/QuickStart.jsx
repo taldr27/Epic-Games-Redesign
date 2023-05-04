@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaPlay } from 'react-icons/fa';
 import { miniQuick } from '../constants';
 
 const QuickStart = () => {
@@ -17,7 +18,13 @@ const QuickStart = () => {
         {miniQuick.map((miniGame, index) => (
           <li key={miniGame.id} className={`flex ${index === selected ? "bg-tertiary" : ""} items-center gap-2 p-2 rounded-md`} onMouseEnter={() => handleEnterChange(index)} onMouseLeave={() => handleOutChange(index)}>
             <img src={miniGame.img} />
-            <span>{miniGame.name.length > 12 ? `${miniGame.name.slice(0, 16)}...` : miniGame.name}</span>
+            <div>
+              <span>{miniGame.name.length > 12 ? `${miniGame.name.slice(0, 16)}...` : miniGame.name}</span>
+              <div className={`${index === selected ? "block" : "hidden"} flex items-center gap-2`}>
+                <FaPlay />
+                <span>Play</span>
+              </div>
+            </div>
           </li>
         ))}
       </ul>
