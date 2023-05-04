@@ -31,7 +31,7 @@ const Carousel = () => {
           <img src={image.image} alt={image.name} className="w-full"/>
           <img src={shadow} className="absolute inset-0 object-cover w-full h-full" />
           <img src={image.ico} alt={image.name} className="absolute top-[20%] 2xl:top-[25%] left-[61px] 2xl:w-40" />
-          <div className="z-50 absolute top-[45%] 2xl:top-[45%] left-[61px] w-[350px]">
+          <div className="z-48 absolute top-[45%] 2xl:top-[45%] left-[61px] w-[350px]">
             <h2 className="text-base font-bold 2xl:text-3xl">GRANDES DESCUENTOS</h2>
             <p className="text-white text-sm">{image.description}</p>
           </div>
