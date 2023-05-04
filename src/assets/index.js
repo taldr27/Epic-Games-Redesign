@@ -2,6 +2,7 @@ import rightArrow from '../assets/right_arrow.svg';
 import circleArrowRight from '../assets/arrow_right.svg';
 import circleArrowLeft from '../assets/arrow_left.svg';
 import downArrow from '../assets/Vector.png';
+import doubleArrow from '../assets/doubleArrow.svg';
 
 import EpicLogo from '../assets/EpicLogo.svg';
 import google from '../assets/platforms/google1.svg';
@@ -90,11 +91,16 @@ import dbdMG from '../assets/myGames/myGames/dbdMG.svg';
 import communityBG from '../assets/communityBG.svg';
 import shadowBG from '../assets/communityShadowBG.svg';
 
+import trMini from '../assets/games/trMini.svg';
+import spiderMini from '../assets/games/spiderMini.svg';
+import fortniteMini from '../assets/games/fortniteMini.svg';
+
 export {
   rightArrow,
   circleArrowRight,
   circleArrowLeft,
   downArrow,
+  doubleArrow,
   EpicLogo,
   google,
   fb,
@@ -163,5 +169,8 @@ export {
   valorantMG, 
   dbdMG,
   communityBG,
+  trMini,
+  spiderMini,
+  fortniteMini,
   shadowBG,
 };

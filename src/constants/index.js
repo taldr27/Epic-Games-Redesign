@@ -53,6 +53,9 @@ import {
   dbdMG,
   sottbMG,
   fortMG,
+  trMini,
+  spiderMini,
+  fortniteMini,
 } from '../assets';
 
 const platforms = [
@@ -642,4 +645,22 @@ const myGames = [
   },
 ]
 
-export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated, bestFranchises, gameEvents, recentMyGames, myGames };
+const miniQuick = [
+  {
+    id: 1,
+    img: trMini,
+    name: "Rise Of The Tomb Raider",
+  },
+  {
+    id: 2,
+    img: spiderMini,
+    name: "Marvel’s Spiderman Remastered"
+  },
+  {
+    id: 3,
+    img: fortniteMini,
+    name: "Fortnite",
+  }
+]
+
+export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated, bestFranchises, gameEvents, recentMyGames, myGames, miniQuick };
