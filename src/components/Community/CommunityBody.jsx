@@ -1,12 +1,11 @@
 import React from 'react'
 import { SectionWrapper } from '../../wrapper'
-import { communityBG, shadowBG } from '../../assets';
+import CommunityTop from './CommunityTop';
 
 const CommunityBody = () => {
   return (
-    <div className="mt-5 relative">
-      <img className="w-full" src={communityBG} />
-      <img className="w-full h-full absolute inset-0" src={shadowBG} />
+    <div className="mt-5">
+      <CommunityTop />
     </div>
   )
 }

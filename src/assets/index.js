@@ -95,6 +95,15 @@ import trMini from '../assets/games/trMini.svg';
 import spiderMini from '../assets/games/spiderMini.svg';
 import fortniteMini from '../assets/games/fortniteMini.svg';
 
+// Community Section
+
+import userIconCP from '../assets/communityPage/userIconCP.svg';
+import onlineIconCP from '../assets/communityPage/onlineIconCP.svg';
+import starsCP from '../assets/communityPage/starsCP.svg';
+import cupCP from '../assets/communityPage/cupCP.svg';
+import platinumCP from '../assets/communityPage/platinumCP.svg';
+import penCP from '../assets/communityPage/penCP.svg';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -173,4 +182,10 @@ export {
   spiderMini,
   fortniteMini,
   shadowBG,
+  userIconCP,
+  onlineIconCP,
+  starsCP,
+  cupCP,
+  platinumCP,
+  penCP,
 };
