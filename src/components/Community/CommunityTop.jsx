@@ -10,10 +10,10 @@ const CommunityTop = () => {
       <img className="w-full" src={communityBG} />
       <img className="w-full h-full absolute inset-0" src={shadowBG} />
       <div>
-        <img src={userIconCP} className="absolute top-[100px] left-6" />
-        <img src={onlineIconCP} className="absolute left-[109px] top-[185px]" />
+        <img src={userIconCP} className="absolute top-[100px] left-6 2xl:top-[20%] 2xl:left-[7%]" />
+        <img src={onlineIconCP} className="absolute left-[109px] top-[185px] 2xl:top-[32%] 2xl:left-[12.5%]" />
       </div>
-      <div className="absolute left-[163px] top-[124.5px]">
+      <div className="absolute left-[163px] top-[124.5px] 2xl:top-[25%] 2xl:left-[17%]">
         <h2 className="font-bold text-xl mb-[7px]">USER</h2>
         <div className="flex gap-[13px]">
           <div className="flex flex-col">
