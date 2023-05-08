@@ -10,7 +10,7 @@ import CommunityPublications from './CommunityPublications';
 
 const CommunityMain = () => {
 
-  const [page, setPage] = useState(<CommunityResume />);
+  const [currentPage, setPage] = useState(<CommunityResume />);
   const [active, setActive] = useState("Resume");
 
   const onClickChange = (page) => {
@@ -41,7 +41,9 @@ const CommunityMain = () => {
     <div className="mt-5 relative">
       <CommunityTop />
       <CommunityNav onClickChange={onClickChange} activeClass={active} />
-      {page}
+      <div className="absolute top-[300px]">
+        {currentPage}
+      </div>
     </div>
   )
 }
