@@ -5,8 +5,8 @@ import Register from "./components/Authentication/Register";
 import MyGames from "./components/MyGames/MyGames";
 import BodyShop from "./components/Shop/BodyShop";
 import SideBarAndBody from "./components/SideBarAndBody";
-import CommunityBody from "./components/Community/CommunityBody";
 import UnrealBody from "./components/Unreal/UnrealBody";
+import CommunityMain from "./components/Community/CommunityMain";
 
 const App = () => {
   const [login, setLogin] = useState(true);
@@ -39,7 +39,7 @@ const App = () => {
           />
           <Route
             path="/community"
-            element={<SideBarAndBody><CommunityBody/></SideBarAndBody>}
+            element={<SideBarAndBody><CommunityMain/></SideBarAndBody>}
           />
           <Route
             path="/unreal"
