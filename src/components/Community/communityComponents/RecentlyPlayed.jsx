@@ -4,9 +4,9 @@ import { timePlayedSymbol, trophieSymbol } from '../../../assets'
 
 const RecentlyPlayed = () => {
   return (
-    <div className="flex gap-[15px]">
+    <div className="flex gap-[15px] mb-5">
       {profileRecentlyPlayed.map((recentlyPlayedGame) => (
-        <div key={recentlyPlayedGame.id} className="flex items-center bg-secondary w-[221px] rounded-[10px] gap-[10px]">
+        <div key={recentlyPlayedGame.id} className="flex items-center bg-secondary w-[221px] h-[119px] rounded-[10px] gap-[10px]">
           <img src={recentlyPlayedGame.img} className="my-[11px] ml-[20.5px]" />
           <div className="w-[105px]">
             <h2 className="font-medium text-sm">{recentlyPlayedGame.gameTitle}</h2>

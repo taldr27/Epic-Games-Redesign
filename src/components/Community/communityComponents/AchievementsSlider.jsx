@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import { A11y, Navigation } from 'swiper';
@@ -34,18 +34,20 @@ const AchievementsSlider = ({ isRandom }) => {
             }
           }
         }
-        className=" border-gray-300 mx-auto"
+        className="w-full"
       >
         {isRandom ? 
           random.map((achievement, index) => (
-            <div key={index} className="flex flex-col">
-              <SwiperSlide key={achievement.achievementName}>
-                <div className="flex gap-5">
-                  <img src={achievement.achievementImage} />
-                  <div className="flex flex-col">
-                    <span>{achievement.gameName}</span>
-                    <span>{achievement.achievementName}</span>
-                    <span>{achievement.progress}</span>
+            <div key={index} className="">
+              <SwiperSlide key={achievement.achievementName} className="">
+                <div className="flex gap-[10px] w-[221px] h-[96px] rounded-[10px] items-center  bg-secondary mt-4">
+                  <img src={achievement.achievementImage} className="ml-[21px]" />
+                  <div className="w-[105px]">
+                    <h2 className="font-medium text-sm">{achievement.achievementName}</h2>
+                    <div className="flex flex-col">
+                      <span className="font-medium text-[10px]">{achievement.progress}</span>
+                      <span className="font-medium text-[10px]">{achievement.gameName}</span>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -53,7 +55,7 @@ const AchievementsSlider = ({ isRandom }) => {
           )) 
           : 
           gameAchievements.map((achievement) => (
-            <div key={achievement.id} className="flex flex-col">
+            <div key={achievement.id} className="flex items-center bg-secondary w-[221px] rounded-[10px] gap-[10px]">
               {achievement.achievementsArray.map((element) => (
                 <SwiperSlide key={element.achievementName}>
                   <div className="flex gap-5">
