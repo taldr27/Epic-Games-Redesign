@@ -63,6 +63,8 @@ import {
   profileRecentlyAmnesia,
 } from '../assets';
 
+import gameAchievements from './achievements';
+
 const platforms = [
   {
     name: "google",
@@ -679,7 +681,7 @@ const profileRecentlyPlayed = [
   {
     id: 1,
     img: profileRecentlySpiderman,
-    gameTitle: "Marvel´s Spider-Man Remastered",
+    gameTitle: "Marvel´s Spider-Man",
     timePlayed: "15h",
     trophies: 34,
   },
@@ -706,4 +708,18 @@ const profileRecentlyPlayed = [
   },
 ];
 
-export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated, bestFranchises, gameEvents, recentMyGames, myGames, miniQuick, profileRecentlyPlayed };
+export { 
+  platforms, 
+  carouselImages, 
+  saleGames, 
+  freeGames, 
+  communityGames, 
+  recentUpdated, 
+  bestFranchises, 
+  gameEvents, 
+  recentMyGames, 
+  myGames, 
+  miniQuick, 
+  profileRecentlyPlayed, 
+  gameAchievements, 
+};

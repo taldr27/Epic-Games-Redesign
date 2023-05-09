@@ -12,7 +12,7 @@ const RecentlyPlayed = () => {
             <h2 className="font-medium text-sm">{recentlyPlayedGame.gameTitle}</h2>
             <div className="flex items-center font-normal text-[13px]">
               <img src={timePlayedSymbol} className="mr-[2px]" />
-              <span className="mr-[13.5px]">{recentlyPlayedGame.timePlayed}</span>
+              <span className="mr-[11px]">{recentlyPlayedGame.timePlayed}</span>
               <img src={trophieSymbol} className="mr-[5px]" />
               <span>{recentlyPlayedGame.trophies}</span>
             </div>
