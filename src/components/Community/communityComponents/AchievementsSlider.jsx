@@ -1,16 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import { A11y, Navigation } from 'swiper';
 import { gameAchievements } from '../../../constants';
 
-const AchievementsSlider = () => {
-  // const achievementsArray = [];
-  // Object.keys(achievements).map((a) => {
-  //   achievementsArray.push(a);
-  // });
-  // console.log(achievements[achievementsArray[0]][2].achievementName);
-
+const AchievementsSlider = ({ isRandom }) => {
+  let random;
+  const mergedArray = gameAchievements[0].achievementsArray.concat(gameAchievements[1].achievementsArray);
+  mergedArray.sort(() => Math.random() - 0.5);
+  random = mergedArray.slice(0, 5);
   return (
     <div>
       <Swiper
@@ -38,22 +36,38 @@ const AchievementsSlider = () => {
         }
         className=" border-gray-300 mx-auto"
       >
-        {gameAchievements.map((achievement) => (
-          <div key={achievement.id} className="flex flex-col">
-            {achievement.achievementsArray.map((element) => (
-              <SwiperSlide key={element.achievementName}>
+        {isRandom ? 
+          random.map((achievement, index) => (
+            <div key={index} className="flex flex-col">
+              <SwiperSlide key={achievement.achievementName}>
                 <div className="flex gap-5">
-                  <img src={element.achievementImage} />
+                  <img src={achievement.achievementImage} />
                   <div className="flex flex-col">
                     <span>{achievement.gameName}</span>
-                    <span>{element.achievementName}</span>
-                    <span>{element.progress}</span>
+                    <span>{achievement.achievementName}</span>
+                    <span>{achievement.progress}</span>
                   </div>
                 </div>
-            </SwiperSlide>
-            ))}
-          </div>
-        ))}
+              </SwiperSlide>
+            </div>
+          )) 
+          : 
+          gameAchievements.map((achievement) => (
+            <div key={achievement.id} className="flex flex-col">
+              {achievement.achievementsArray.map((element) => (
+                <SwiperSlide key={element.achievementName}>
+                  <div className="flex gap-5">
+                    <img src={element.achievementImage} />
+                    <div className="flex flex-col">
+                      <span>{achievement.gameName}</span>
+                      <span>{element.achievementName}</span>
+                      <span>{element.progress}</span>
+                    </div>
+                  </div>
+              </SwiperSlide>
+              ))}
+            </div>
+          ))}
       </Swiper>
     </div>
   )
