@@ -56,6 +56,11 @@ import {
   trMini,
   spiderMini,
   fortniteMini,
+  profileRecentlySOTTR,
+  profileRecentlySpiderman,
+  profileRecentlyFortnite,
+  profileRecentlyControl,
+  profileRecentlyAmnesia,
 } from '../assets';
 
 const platforms = [
@@ -663,4 +668,42 @@ const miniQuick = [
   }
 ]
 
-export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated, bestFranchises, gameEvents, recentMyGames, myGames, miniQuick };
+const profileRecentlyPlayed = [
+  {
+    id: 0,
+    img: profileRecentlySOTTR,
+    gameTitle: "Shadow of the Tomb Raider",
+    timePlayed: "5h",
+    trophies: 10,
+  },
+  {
+    id: 1,
+    img: profileRecentlySpiderman,
+    gameTitle: "Marvel´s Spider-Man Remastered",
+    timePlayed: "15h",
+    trophies: 34,
+  },
+  {
+    id: 2,
+    img: profileRecentlyFortnite,
+    gameTitle: "Fortnite",
+    timePlayed: "34h",
+    trophies: 56,
+  },
+  {
+    id: 3,
+    img: profileRecentlyControl,
+    gameTitle: "Control",
+    timePlayed: "7h",
+    trophies: 16,
+  },
+  {
+    id: 4,
+    img: profileRecentlyAmnesia,
+    gameTitle: "Amnesia: Rebirth",
+    timePlayed: "4h",
+    trophies: 12,
+  },
+];
+
+export { platforms, carouselImages, saleGames, freeGames, communityGames, recentUpdated, bestFranchises, gameEvents, recentMyGames, myGames, miniQuick, profileRecentlyPlayed };

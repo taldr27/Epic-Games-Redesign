@@ -104,12 +104,25 @@ import cupCP from '../assets/communityPage/cupCP.svg';
 import platinumCP from '../assets/communityPage/platinumCP.svg';
 import penCP from '../assets/communityPage/penCP.svg';
 
+// Recently Resume section
+
+import profileRecentlySOTTR from '../assets/communityPage/recentlyPlayedGames/profileRecentlySOTTR.svg';
+import profileRecentlySpiderman from '../assets/communityPage/recentlyPlayedGames/profileRecentlySpiderman.svg';
+import profileRecentlyFortnite from '../assets/communityPage/recentlyPlayedGames/profileRecentlyFortnite.svg';
+import profileRecentlyControl from '../assets/communityPage/recentlyPlayedGames/profileRecentlyControl.svg';
+import profileRecentlyAmnesia from '../assets/communityPage/recentlyPlayedGames/profileRecentlyAmnesia.svg';
+
+import trophieSymbol from '../assets/communityPage/recentlyPlayedGames/trophieSymbol.svg';
+import timePlayedSymbol from '../assets/communityPage/recentlyPlayedGames/timePlayedSymbol.svg';
+
 export {
   rightArrow,
   circleArrowRight,
   circleArrowLeft,
   downArrow,
   doubleArrow,
+  trophieSymbol,
+  timePlayedSymbol,
   EpicLogo,
   google,
   fb,
@@ -188,4 +201,9 @@ export {
   cupCP,
   platinumCP,
   penCP,
+  profileRecentlySOTTR,
+  profileRecentlySpiderman,
+  profileRecentlyFortnite,
+  profileRecentlyControl,
+  profileRecentlyAmnesia,
 };
