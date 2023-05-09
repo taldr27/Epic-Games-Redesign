@@ -41,7 +41,7 @@ const CommunityMain = () => {
     <div className="mt-5 relative">
       <CommunityTop />
       <CommunityNav onClickChange={onClickChange} activeClass={active} />
-      <div className="absolute top-[300px]">
+      <div className="absolute top-[55%]">
         {currentPage}
       </div>
     </div>

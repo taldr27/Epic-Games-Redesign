@@ -7,7 +7,7 @@ console.log(activeClass);
   };
 
   return (
-    <nav className="absolute top-[239px] w-full h-[43px] 2xl:top-[40%]">
+    <nav className="absolute top-[239px] w-full h-[43px] 2xl:top-[40%] mb-[28px]">
       <ul className="flex gap-10 items-center h-full font-bold text-gray-100 cursor-pointer">
         <li
           className={`ml-[32px] 2xl:ml-[8%] ${activeClass === "Resume" ? "text-white underline underline-offset-8" : ""}`} 
