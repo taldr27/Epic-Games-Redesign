@@ -3,23 +3,35 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import { A11y, Navigation } from 'swiper';
 import { gameAchievements } from '../../../constants';
+import { circleArrowLeft, circleArrowRight } from '../../../assets';
 
-const AchievementsSlider = ({ isRandom, banner, gameTitle }) => {
+const AchievementsSlider = ({ isRandom, banner, gameTitle, arrows }) => {
   let contentGames;
   const mergedArray = gameAchievements.reduce((acc, obj) => acc.concat(obj.achievementsArray), []);
   const mergedRandom = mergedArray.sort(() => Math.random() - 0.5).slice(0, 5);
   const separateGames = mergedArray.filter((merged) => merged.gameName === gameTitle);
   
   gameTitle ? contentGames = separateGames : contentGames = mergedRandom;
-
+  console.log(arrows)
   return (
     <div>
-      <span className="font-bold text-xl">{banner ? banner : gameTitle} | {banner ? mergedArray.length : separateGames.length}</span>
+      <div className="mt-[42px] text-xl font-bold flex justify-between mb-5">
+        <div className="flex items-center">
+          <span className="font-bold text-xl">{banner ? banner : gameTitle} | {banner ? mergedArray.length : separateGames.length}</span>
+        </div>
+        {banner ? "" :
+          <div className="flex gap-2">
+            <img src={circleArrowLeft} className={`bg-white rounded-full cursor-pointer ${arrows[0]}`}/>
+            <img src={circleArrowRight} className={`bg-white rounded-full cursor-pointer ${arrows[1]}`} />
+          </div>
+        }
+      {console.log("asdasdasd", `${banner ? "" : `.${arrows[0]}`}`)}
+      </div>
       <Swiper
         modules={[Navigation, A11y]}
         navigation={{
-          nextEl: ``,
-          prevEl: ``,
+          prevEl: `${banner ? "" : `.${arrows[0]}`}`,
+          nextEl: `${banner ? "" : `.${arrows[1]}`}`,
           disabledClass: "swiper-button-disabled"
         }}
         breakpoints={
