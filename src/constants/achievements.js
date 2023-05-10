@@ -9,7 +9,7 @@ import {
   achieveTomb3,
   achieveTomb4,
   achieveTomb5
-} from "../assets/communityPage/achievements";
+} from "../assets/communityPage";
 
 const gameAchievements = [
   {

@@ -1,11 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
 
 const CommunityCaptures = () => {
-  return (
-    <div>
-      CommunityCaptures
-    </div>
-  )
+
 }
 
 export default CommunityCaptures
