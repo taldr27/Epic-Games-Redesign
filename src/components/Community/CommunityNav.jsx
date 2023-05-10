@@ -1,7 +1,6 @@
 import React from 'react'
 
 const CommunityNav = ({ onClickChange, activeClass }) => {
-console.log(activeClass);
   const handlePageClick = (page) => () => {
     onClickChange(page);
   };

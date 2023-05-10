@@ -51,6 +51,13 @@ const gameAchievements = [
         progress: 71,
         completed: false,
       },
+      {
+        achievementName: "Instintos de supervivencia",
+        gameName: "Shadow of the Tomb Raider",
+        achievementImage: achieveTomb5,
+        progress: 71,
+        completed: false,
+      },
     ],
   },
   {

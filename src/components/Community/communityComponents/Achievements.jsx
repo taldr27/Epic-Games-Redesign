@@ -4,7 +4,7 @@ import AchievementsSlider from './AchievementsSlider'
 const Achievements = ({}) => {
   return (
     <>
-      <AchievementsSlider isRandom={true} />
+      <AchievementsSlider isRandom={true} banner="Achievements" />
     </>
   )
 }

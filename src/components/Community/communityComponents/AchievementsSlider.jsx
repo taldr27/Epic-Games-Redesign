@@ -4,13 +4,17 @@ import 'swiper/swiper-bundle.min.css';
 import { A11y, Navigation } from 'swiper';
 import { gameAchievements } from '../../../constants';
 
-const AchievementsSlider = ({ isRandom }) => {
-  let random;
-  const mergedArray = gameAchievements[0].achievementsArray.concat(gameAchievements[1].achievementsArray);
-  mergedArray.sort(() => Math.random() - 0.5);
-  random = mergedArray.slice(0, 5);
+const AchievementsSlider = ({ isRandom, banner, gameTitle }) => {
+  let contentGames;
+  const mergedArray = gameAchievements.reduce((acc, obj) => acc.concat(obj.achievementsArray), []);
+  const mergedRandom = mergedArray.sort(() => Math.random() - 0.5).slice(0, 5);
+  const separateGames = mergedArray.filter((merged) => merged.gameName === gameTitle);
+  
+  gameTitle ? contentGames = separateGames : contentGames = mergedRandom;
+
   return (
     <div>
+      <span className="font-bold text-xl">{banner ? banner : gameTitle} | {banner ? mergedArray.length : separateGames.length}</span>
       <Swiper
         modules={[Navigation, A11y]}
         navigation={{
@@ -37,9 +41,9 @@ const AchievementsSlider = ({ isRandom }) => {
         className="w-full"
       >
         {isRandom ? 
-          random.map((achievement, index) => (
+          contentGames.map((achievement, index) => (
             <div key={index} className="">
-              <SwiperSlide key={achievement.achievementName}>
+              <SwiperSlide key={index}>
                 <div className="flex gap-[10px] h-[96px] rounded-[10px] items-center  bg-secondary mt-4">
                   <img src={achievement.achievementImage} className="ml-[21px]" />
                   <div className="w-[105px] my-3 mr-[21px]">
@@ -60,28 +64,26 @@ const AchievementsSlider = ({ isRandom }) => {
             </div>
           )) 
           : 
-          gameAchievements.map((achievement) => (
-            <div key={achievement.id} className="flex items-center bg-secondary w-[221px] rounded-[10px] gap-[10px]">
-              {achievement.achievementsArray.map((element) => (
-                <SwiperSlide key={element.achievementName}>
-                  <div className="flex gap-[10px] w-[219px] h-[96px] rounded-[10px] items-center  bg-secondary">
-                    <img src={element.achievementImage} className="ml-[21px]" />
-                    <div className="w-[105px] my-3 mr-[21px]">
-                      <h2 className="font-medium text-sm">{element.achievementName}</h2>
-                      <div className="flex flex-col">
-                        <div className="w-[79px]">
-                          {element.completed ? "" :                     
-                            <div className="w-full bg-gray-200 rounded-full h-1 dark:bg-gray-700 my-[7px]">
-                              <div className={"bg-blue-600 h-1 rounded-full"} style={{ width: `${element.progress}%` }}></div>
-                            </div>
-                          }
-                        </div>
-                        <span className="font-medium text-[10px]">{achievement.gameName}</span>
+          contentGames.map((achievement, index) => (
+            <div key={index} className="">
+              <SwiperSlide key={index}>
+                <div className="flex gap-[10px] h-[96px] rounded-[10px] items-center  bg-secondary mt-4">
+                  <img src={achievement.achievementImage} className="ml-[21px]" />
+                  <div className="w-[105px] my-3 mr-[21px]">
+                    <h2 className="font-medium text-sm">{achievement.achievementName}</h2>
+                    <div className="flex flex-col">
+                      <div className="w-[79px]">
+                        {achievement.completed ? "" :                     
+                          <div className="w-full bg-gray-200 rounded-full h-1 dark:bg-gray-700 my-[7px]">
+                            <div className={"bg-blue-600 h-1 rounded-full"} style={{ width: `${achievement.progress}%` }}></div>
+                          </div>
+                        }
                       </div>
+                      <span className="font-medium text-[10px]">{achievement.gameName}</span>
                     </div>
                   </div>
+                </div>
               </SwiperSlide>
-              ))}
             </div>
           ))}
       </Swiper>
