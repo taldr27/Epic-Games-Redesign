@@ -12,7 +12,6 @@ const AchievementsSlider = ({ isRandom, banner, gameTitle, arrows }) => {
   const separateGames = mergedArray.filter((merged) => merged.gameName === gameTitle);
   
   gameTitle ? contentGames = separateGames : contentGames = mergedRandom;
-  console.log(arrows)
   return (
     <div className="mb-[22.5px]">
       <div className="text-xl font-bold flex justify-between">
