@@ -25,33 +25,33 @@ const Register = ({ onToggleRegister }) => {
 
 
   return (
-      <div className="bg-secondary sm:w-[480px] px-6 py-10 rounded-[15px]">
+      <div className="bg-secondary sm:w-[480px] px-6 md:py-10 rounded-[15px] xsm:py-7 xsm:my-10 xsm:mx-4">
         <div className="flex flex-col items-center font-bold gap-1">
           <img src={EpicLogo} alt='epic-logo' />
           <span className="mt-4">Sign Up</span>
         </div>
         <div>
           <form className="my-8 flex flex-col">
-            <div className="flex gap-[15px] mb-5">
+          <div className="md:flex gap-[15px] xsm:flex-row md:flex-col">
               <input 
                 type="text"
                 name="name"
                 placeholder="First Name"
                 className="bg-secondary py-18 px-30 placeholder:text-white text-sm
-                text-white outlined-none border border-white w-[187px]"
+                text-white outlined-none border border-white md:w-[187px] xsm:mb-[18px] xsm:w-full h-[53px] md:mb-0"
               />
               <input 
                 type="text"
                 name="lastName"
                 placeholder="Last Name"
                 className="bg-secondary py-18 px-30 placeholder:text-white text-sm
-                text-white outlined-none border border-white w-full"
+                text-white outlined-none border border-white w-full h-[53px] mb-5"
               />
             </div>
             <div className="relative">
               <select
                 className="bg-secondary py-18 px-30 placeholder:text-white text-sm text-white 
-                            appearance-none border border-white mb-5 pl-10 w-full">
+                            appearance-none border border-white mb-5 pl-10 w-full h-[53px]">
                 <option value="">{`Country`}</option>
                 {countryList.map((country) => (
                   <option key={country.name}>{country.name}</option>
@@ -64,14 +64,14 @@ const Register = ({ onToggleRegister }) => {
               name="username"
               placeholder="Display Name"
               className="bg-secondary py-18 px-30 placeholder:text-white text-sm
-              text-white outlined-none border border-white mb-5"
+              text-white outlined-none border border-white mb-5 h-[53px]"
             />
             <input 
               type="email"
               name="email"
               placeholder="Email Address"
               className="bg-secondary py-18 px-30 placeholder:text-white text-sm
-              text-white outlined-none border border-white mb-5"
+              text-white outlined-none border border-white mb-5 h-[53px]"
             />
             <div className="relative">
               <input 
@@ -80,7 +80,7 @@ const Register = ({ onToggleRegister }) => {
                 placeholder="Password"
                 autoComplete="current-password"
                 className="bg-secondary py-18 px-30 placeholder:text-white text-sm
-                text-white outlined-none border border-white mb-6 w-full"
+                text-white outlined-none border border-white mb-6 w-full h-[53px]"
               />
               <AiFillEyeInvisible className="absolute top-5 right-6 w-5 h-5" />
             </div>
@@ -89,7 +89,7 @@ const Register = ({ onToggleRegister }) => {
                 // type="submit"
                 type="button"
                 className="bg-blue-200 py-18 px-135 outline-none w-full text-white text-sm font-bold
-                hover:bg-blue-100"
+                hover:bg-blue-100 h-[53px]"
               >
                 Sign Up
               </button>
@@ -121,4 +121,4 @@ const Register = ({ onToggleRegister }) => {
   )
 }
 
-export default SectionWrapper(Register, "register");
+export default Register;

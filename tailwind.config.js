@@ -8,6 +8,8 @@ export default {
     extend: {
       screens: {
         'xsm': '375px',
+        'tall': { 'raw': '(min-height: 709px)' },
+        'taller': { 'raw': '(min-height: 807px)' },
       },
       colors: {
         primary: "#121212",

@@ -20,11 +20,16 @@ const App = () => {
           <Route
             path="/"
             element={
-              <div className="bg-login-background bg-cover bg-no-repeat bg-center w-full h-screen flex justify-center items-center">
+              <div>
                 {login ? (
-                  <Login onToggleRegister={handleRegister} />
+                  <div className="bg-login-background bg-cover bg-no-repeat bg-center w-full h-full flex justify-center items-center tall:h-screen">
+                    <Login onToggleRegister={handleRegister} />
+                  </div>
+                
                 ) : (
-                  <Register onToggleRegister={handleRegister} />
+                  <div className="bg-login-background bg-cover bg-no-repeat bg-center w-full h-full flex justify-center items-center taller:h-screen">
+                    <Register onToggleRegister={handleRegister} />
+                  </div> 
                 )}
               </div>
             }
