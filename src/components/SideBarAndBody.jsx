@@ -5,7 +5,7 @@ const SideBarAndBody = ({ children }) => {
   return (
     <div className="">
       <div className="flex">
-        <div className="w-64">
+        <div className="w-64 hidden sm:block">
           <SideBar />
         </div>
         <div className="w-[83%] flex flex-col">

@@ -115,6 +115,16 @@ import profileRecentlyAmnesia from '../assets/communityPage/recentlyPlayedGames/
 import trophieSymbol from '../assets/communityPage/recentlyPlayedGames/trophieSymbol.svg';
 import timePlayedSymbol from '../assets/communityPage/recentlyPlayedGames/timePlayedSymbol.svg';
 
+// Friends
+
+import Friend1 from '../assets/communityPage/friends/Friend1.svg';
+import Friend2 from '../assets/communityPage/friends/Friend2.svg';
+import Friend3 from '../assets/communityPage/friends/Friend3.svg';
+import Friend4 from '../assets/communityPage/friends/Friend4.svg';
+import Friend5 from '../assets/communityPage/friends/Friend5.svg';
+import Friend6 from '../assets/communityPage/friends/Friend6.svg';
+import Friend7 from '../assets/communityPage/friends/Friend7.svg';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -206,4 +216,11 @@ export {
   profileRecentlyFortnite,
   profileRecentlyControl,
   profileRecentlyAmnesia,
+  Friend1,
+  Friend2,
+  Friend3,
+  Friend4,
+  Friend5,
+  Friend6,
+  Friend7,
 };

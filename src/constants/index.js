@@ -64,6 +64,7 @@ import {
 } from '../assets';
 
 import gameAchievements from './achievements';
+import friendsArray from './friends';
 
 const platforms = [
   {
@@ -722,4 +723,5 @@ export {
   miniQuick, 
   profileRecentlyPlayed, 
   gameAchievements, 
+  friendsArray,
 };
