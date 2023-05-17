@@ -12,7 +12,7 @@ const SideBarAndBody = ({ children }) => {
           <div className="fixed w-inherit z-50">
             <TopBar />
           </div>
-          <div className="mt-48">
+          <div className="mt-[131px]">
             {children}
           </div>
         </div>

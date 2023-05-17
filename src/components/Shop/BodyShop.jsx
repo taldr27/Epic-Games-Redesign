@@ -12,7 +12,10 @@ import RecentUpdated from './RecentUpdated';
 
 const Body = () => {
   return (
-    <div className="mt-5 mb-[79px]">
+    <div className="mb-[79px] relative">
+      <div className="h-[43px] mb-5 bg-secondary">
+        <BodyShopBar />
+      </div>
       <Carousel />
       <EditorSales />
       <CtaCommunity />

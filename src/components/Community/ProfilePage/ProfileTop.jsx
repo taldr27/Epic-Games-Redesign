@@ -1,7 +1,7 @@
 import React from 'react'
-import { communityBG, cupCP, onlineIconCP, penCP, platinumCP, shadowBG, starsCP, userIconCP } from '../../assets';
+import { communityBG, cupCP, onlineIconCP, penCP, platinumCP, shadowBG, starsCP, userIconCP } from '../../../assets';
 
-const CommunityTop = () => {
+const ProfileTop = () => {
   return (
     <div className="relative">
       <div className="flex items-center justify-center w-[43px] h-[43px] bg-secondary rounded-[11px] absolute top-5 right-5 cursor-pointer">
@@ -43,4 +43,4 @@ const CommunityTop = () => {
   )
 }
 
-export default CommunityTop
+export default ProfileTop

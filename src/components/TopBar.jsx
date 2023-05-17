@@ -8,7 +8,7 @@ import BodyShopBar from './Shop/BodyShopBar';
 
 const TopBar = () => {
   return (
-    <div className="flex flex-col justify-center h-[174px] bg-primary">
+    <div className="flex flex-col bg-primary">
       <div className="flex justify-between mt-[68px] mb-5">
         <div className="flex items-center relative gap-[27px] w-[45%]">
           <AiOutlineLeft className="" />
@@ -29,9 +29,6 @@ const TopBar = () => {
           </div>
           <img src={user_ico} />
         </div>
-      </div>
-      <div className="h-[43px]">
-        <BodyShopBar />
       </div>
     </div>
   )

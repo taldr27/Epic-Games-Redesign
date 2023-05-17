@@ -44,7 +44,7 @@ const App = () => {
           />
           <Route
             path="/community"
-            element={<SideBarAndBody><CommunityMain/></SideBarAndBody>}
+            element={<SideBarAndBody><CommunityMain /></SideBarAndBody>}
           />
           <Route
             path="/unreal"

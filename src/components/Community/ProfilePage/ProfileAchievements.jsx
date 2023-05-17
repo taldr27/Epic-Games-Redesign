@@ -1,8 +1,7 @@
 import React from 'react'
-import Achievements from './communityComponents/Achievements'
-import AchievementsSlider from './communityComponents/AchievementsSlider'
+import AchievementsSlider from '../communityComponents/AchievementsSlider'
 
-const CommunityAchievements = () => {
+const ProfileAchievements = () => {
   return (
     <div className="flex flex-col">
       <AchievementsSlider isRandom={false} gameTitle={"Shadow of the Tomb Raider"} arrows={["TRaiderL", "TRaiderR"]} />
@@ -11,4 +10,4 @@ const CommunityAchievements = () => {
   )
 }
 
-export default CommunityAchievements
+export default ProfileAchievements

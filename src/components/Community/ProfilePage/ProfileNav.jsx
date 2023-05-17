@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CommunityNav = ({ onClickChange, activeClass }) => {
+const ProfileNav = ({ onClickChange, activeClass }) => {
   const handlePageClick = (page) => () => {
     onClickChange(page);
   };
@@ -43,4 +43,4 @@ const CommunityNav = ({ onClickChange, activeClass }) => {
   )
 }
 
-export default CommunityNav
+export default ProfileNav
