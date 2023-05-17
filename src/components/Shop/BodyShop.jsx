@@ -10,11 +10,16 @@ import CommunityFeatured from './CommunityFeatured';
 import BestFranchises from './BestFranchises';
 import RecentUpdated from './RecentUpdated';
 
-const Body = () => {
+const BodyShop = () => {
+  const barElements = [
+    "Home",
+    "Discover",
+    "News",
+  ]
   return (
     <div className="mb-[79px] relative">
       <div className="h-[43px] mb-5 bg-secondary">
-        <BodyShopBar />
+        <BodyShopBar elements={barElements} />
       </div>
       <Carousel />
       <EditorSales />
@@ -28,4 +33,4 @@ const Body = () => {
   )
 }
 
-export default SectionWrapper(Body, "body");
+export default SectionWrapper(BodyShop, "body");

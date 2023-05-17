@@ -7,7 +7,7 @@ import { A11y, Navigation } from 'swiper';
 const RecentGamesSlider = ({title, games, arrows}) => {
   return (
     <div>
-      <div className="mt-[42px] text-xl font-bold flex justify-between mb-5">
+      <div className="text-xl font-bold flex justify-between mb-5">
         <div className="flex items-center">
           <span className="mr-[19px]">{title}</span>
         </div>
