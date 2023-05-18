@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiOutlineLeft } from 'react-icons/ai';
 import { RxMagnifyingGlass } from 'react-icons/rx';
 import { BsCart3, BsBell, BsPeople } from 'react-icons/bs';
 import { SectionWrapper } from '../wrapper'
 import { bell, cart, friends, user_ico } from '../assets';
-import BodyShopBar from './Shop/BodyShopBar';
+import BodyShopBar from './BodyNavBar';
+import DropdownMenu from './DropdownMenu';
 
 const TopBar = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleOpenDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
-    <div className="flex flex-col bg-primary">
+    <div className="bg-primary">
       <div className="flex justify-between mt-[68px] mb-5">
         <div className="flex items-center relative gap-[27px] w-[45%]">
           <AiOutlineLeft className="" />
@@ -27,9 +34,10 @@ const TopBar = () => {
           <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center">
             <img src={friends} /> <span className="ml-1">5</span>
           </div>
-          <img src={user_ico} />
+          <img src={user_ico} onClick={handleOpenDropdown} />
         </div>
       </div>
+        {isDropdownOpen && <DropdownMenu />}
     </div>
   )
 }

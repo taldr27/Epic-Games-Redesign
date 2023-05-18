@@ -1,6 +1,6 @@
 import React from 'react'
 import { SectionWrapper } from '../../wrapper';
-import BodyShopBar from './BodyShopBar';
+import BodyShopBar from '../BodyNavBar';
 import Carousel from './Carousel';
 import EditorSales from './EditorSales';
 import CtaCommunity from './CtaCommunity';
@@ -17,18 +17,20 @@ const BodyShop = () => {
     "News",
   ]
   return (
-    <div className="mb-[79px] relative">
-      <div className="h-[43px] mb-5 bg-secondary">
+    <div className="mb-[79px]">
+      <div className="h-[43px] bg-primary fixed z-50 xd pr-5 2xl:pr-[87px]">
         <BodyShopBar elements={barElements} />
       </div>
-      <Carousel />
-      <EditorSales />
-      <CtaCommunity />
-      <FreeGames />
-      <NewEvents />
-      <CommunityFeatured />
-      <BestFranchises />
-      <RecentUpdated />
+      <div>
+        <Carousel />
+        <EditorSales />
+        <CtaCommunity />
+        <FreeGames />
+        <NewEvents />
+        <CommunityFeatured />
+        <BestFranchises />
+        <RecentUpdated />
+      </div>
     </div>
   )
 }

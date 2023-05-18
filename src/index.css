@@ -88,3 +88,7 @@
 .w-inherit {
   width: inherit;
 }
+
+.xd {
+  width: -webkit-fill-available;
+}

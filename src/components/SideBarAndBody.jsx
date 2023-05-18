@@ -9,7 +9,7 @@ const SideBarAndBody = ({ children }) => {
           <SideBar />
         </div>
         <div className="w-[83%] flex flex-col">
-          <div className="fixed w-inherit z-50">
+          <div className="fixed w-inherit z-50 bg-primary">
             <TopBar />
           </div>
           <div className="mt-[131px]">
