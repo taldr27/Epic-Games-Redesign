@@ -10,5 +10,5 @@ https://epic-games-redesign.netlify.app
 Available urls:
 - /shop
 - /my-games
-- /community, needs fix and add a new tab called my profile! Moved all the content from here to my profile.
+- /community, needs fix and add a new tab called my profile! Moved all the content from here to my profile dropdown shared component.
 - /unreal
