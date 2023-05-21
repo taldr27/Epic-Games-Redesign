@@ -1,18 +1,29 @@
 import React, { useState } from 'react'
 import { AiOutlineLeft } from 'react-icons/ai';
 import { RxMagnifyingGlass } from 'react-icons/rx';
-import { BsCart3, BsBell, BsPeople } from 'react-icons/bs';
 import { SectionWrapper } from '../wrapper'
 import { bell, cart, friends, status, user_ico } from '../assets';
-import BodyShopBar from './BodyNavBar';
-import DropdownMenu from './DropdownMenu';
+import MainDropdown from './Dropdowns/MainDropdown';
 
 const TopBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [clickedLink, setClickedLink] = useState('');
 
   const handleOpenDropdown = () => {
-    console.log('click');
     setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleDropdownElement = (event) => {
+    let element = event.target;
+    while (element && !element.id) {
+      element = element.parentNode;
+    }
+    
+    if (element && element.id) {
+      const parentId = element.id;
+      handleOpenDropdown();
+      setClickedLink(parentId)
+    }
   };
 
   return (
@@ -26,22 +37,22 @@ const TopBar = () => {
         <div className="flex items-center gap-[17px]">
           <span>Wishlist</span>
           <div className="bg-white h-[30px] w-[0.1px]"></div>
-          <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center justify-center">  
+          <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center justify-center" onClick={handleDropdownElement} id="cart">  
             <img src={cart} />
           </div>
-          <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center">
+          <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center" onClick={handleDropdownElement} id="notifications">
             <img src={bell} /><span className="ml-1">2</span>
           </div>
-          <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center">
+          <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center" onClick={handleDropdownElement} id="friends">
             <img src={friends} /> <span className="ml-1">5</span>
           </div>
-          <div className="relative">
+          <div className="relative cursor-pointer" onClick={handleDropdownElement} id="profile">
             <img src={user_ico} onClick={handleOpenDropdown} />
             <img src={status} className="absolute left-8 bottom-0" />
           </div>
         </div>
       </div>
-        {isDropdownOpen && <DropdownMenu handleClickClose={handleOpenDropdown} />}
+        {isDropdownOpen && <MainDropdown handleClickClose={handleOpenDropdown} dropdownElement={clickedLink} />}
     </div>
   )
 }
