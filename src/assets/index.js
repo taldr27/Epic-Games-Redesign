@@ -125,6 +125,11 @@ import Friend5 from '../assets/communityPage/friends/Friend5.svg';
 import Friend6 from '../assets/communityPage/friends/Friend6.svg';
 import Friend7 from '../assets/communityPage/friends/Friend7.svg';
 
+// Dropdown
+
+import avatar from '../assets/dropdown/avatar.png';
+import closeBtn from '../assets/dropdown/closeBtn.png';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -223,4 +228,6 @@ export {
   Friend5,
   Friend6,
   Friend7,
+  avatar,
+  closeBtn,
 };
