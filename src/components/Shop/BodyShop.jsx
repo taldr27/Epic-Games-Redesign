@@ -18,10 +18,10 @@ const BodyShop = () => {
   ]
   return (
     <div className="mb-[79px]">
-      <div className="h-[43px] bg-primary fixed z-50 xd pr-5 2xl:pr-[87px]">
+      <div className=" bg-primary fixed xd pr-5 top-[13%] z-40 2xl:pr-[87px]">
         <BodyShopBar elements={barElements} />
       </div>
-      <div>
+      <div className="mt-[64px]">
         <Carousel />
         <EditorSales />
         <CtaCommunity />
