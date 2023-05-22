@@ -130,6 +130,7 @@ import Friend7 from '../assets/communityPage/friends/Friend7.svg';
 import avatar from '../assets/dropdown/avatar.png';
 import closeBtn from '../assets/dropdown/closeBtn.png';
 import status from '../assets/dropdown/status.png';
+import notificationIco from '../assets/dropdown/notificationImage.png';
 
 export {
   rightArrow,
@@ -232,4 +233,5 @@ export {
   avatar,
   closeBtn,
   status,
+  notificationIco,
 };

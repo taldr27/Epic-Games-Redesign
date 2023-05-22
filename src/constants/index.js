@@ -61,6 +61,7 @@ import {
   profileRecentlyFortnite,
   profileRecentlyControl,
   profileRecentlyAmnesia,
+  notificationIco,
 } from '../assets';
 
 import gameAchievements from './achievements';
@@ -709,6 +710,25 @@ const profileRecentlyPlayed = [
   },
 ];
 
+const notifications = [
+  {
+    id: 0,
+    userId: 0,
+    title: "Epic Games",
+    img: notificationIco,
+    time: "1min",
+    description: "¡Hola de nuevo de User! ¿Ya viste las nuevas novedades que te hemos traido para ti?",
+  },
+  {
+    id: 1,
+    userId: 0,
+    title: "Epic Games",
+    img: notificationIco,
+    time: "1min",
+    description: "¡Hola de nuevo de User! ¿Ya viste las nuevas novedades que te hemos traido para ti?",
+  },
+]
+
 export { 
   platforms, 
   carouselImages, 
@@ -724,4 +744,5 @@ export {
   profileRecentlyPlayed, 
   gameAchievements, 
   friendsArray,
+  notifications,
 };
