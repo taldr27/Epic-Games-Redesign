@@ -22,7 +22,7 @@ const ProfileDropdown = ({ handleClickClose }) => {
             href="#"
             className="hover:text-white"
           >
-            Perfil
+            Profile
           </a>
         </li>
         <li>
@@ -30,7 +30,7 @@ const ProfileDropdown = ({ handleClickClose }) => {
             href="#"
             className="hover:text-white"
           >
-            Cuenta
+            Account
           </a>
         </li>
         <li>
@@ -38,7 +38,7 @@ const ProfileDropdown = ({ handleClickClose }) => {
             href="#"
             className="hover:text-white"
           >
-            Ajustes
+            Settings
           </a>
         </li>
         <div className="w-[333px] h-[1px] bg-gray-100 my-[10px]"></div>
@@ -47,7 +47,7 @@ const ProfileDropdown = ({ handleClickClose }) => {
             href="#"
             className="hover:text-white"
           >
-            Cupones
+            Coupons
           </a>
         </li>
         <li>
@@ -55,7 +55,7 @@ const ProfileDropdown = ({ handleClickClose }) => {
             href="#"
             className="hover:text-white"
           >
-            Terminos de servicios
+            Service Terms
           </a>
         </li>
         <li>
@@ -63,7 +63,7 @@ const ProfileDropdown = ({ handleClickClose }) => {
             href="#"
             className="hover:text-white"
           >
-            Politica de Privacidad
+            Privacy Policy
           </a>
         </li>
         <li>
@@ -71,7 +71,7 @@ const ProfileDropdown = ({ handleClickClose }) => {
             href="#"
             className="hover:text-white"
           >
-            Politica de reembolso de la tienda
+            Refund Policy
           </a>
         </li>
       </ul>
@@ -80,7 +80,7 @@ const ProfileDropdown = ({ handleClickClose }) => {
           href="#"
           className="font-normal text-xl text-gray-100 hover:text-white"
         >
-          Cerrar sesión
+          Log Out
         </a>
     </div>
 );

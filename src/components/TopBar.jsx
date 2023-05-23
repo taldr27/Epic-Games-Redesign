@@ -37,13 +37,13 @@ const TopBar = () => {
         <div className="flex items-center gap-[17px]">
           <span>Wishlist</span>
           <div className="bg-white h-[30px] w-[0.1px]"></div>
-          <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center justify-center" onClick={handleDropdownElement} id="cart">  
+          <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center justify-center cursor-pointer" onClick={handleDropdownElement} id="cart">  
             <img src={cart} />
           </div>
-          <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center" onClick={handleDropdownElement} id="notifications">
+          <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center cursor-pointer" onClick={handleDropdownElement} id="notifications">
             <img src={bell} /><span className="ml-1">2</span>
           </div>
-          <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center" onClick={handleDropdownElement} id="friends">
+          <div className="bg-secondary h-[43px] w-[69px] p-5 rounded-[28px] flex items-center cursor-pointer" onClick={handleDropdownElement} id="friends">
             <img src={friends} /> <span className="ml-1">5</span>
           </div>
           <div className="relative cursor-pointer" onClick={handleDropdownElement} id="profile">
