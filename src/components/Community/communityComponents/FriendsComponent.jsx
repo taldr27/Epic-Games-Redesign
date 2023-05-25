@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { friendsArray } from '../../../constants';
+import { FriendsContext } from '../../../main';
 
 const FriendsComponent = () => {
+  const friendsArray = useContext(FriendsContext);
   return (
     <div className="mb-[22.5px] w-full">
       <div className="text-xl font-bold flex justify-between">
         <div className="flex items-center">
-          <span className="font-bold text-xl">Friends | 7</span>
+          <span className="font-bold text-xl">Friends | {friendsArray.length}</span>
         </div>
       </div>
       <div className="flex flex-wrap mt-3 h-[98px] gap-[6px]">

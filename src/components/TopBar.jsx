@@ -31,7 +31,7 @@ const TopBar = () => {
       <div className="flex justify-between mt-[68px] mb-5">
         <div className="flex items-center relative gap-[27px] w-[45%]">
           <AiOutlineLeft className="" />
-          <input className="rounded-[47px] w-full p-2 pl-[55px] placeholder:text-[16px]" placeholder="Search games, users or content..." />
+          <input className="rounded-[47px] w-full p-2 pl-[55px]" placeholder="Search games, users or content..." />
           <RxMagnifyingGlass className="absolute top-1/2 left-14 transform -translate-y-1/2 w-7 h-7 text-gray-400" />
         </div>
         <div className="flex items-center gap-[17px]">

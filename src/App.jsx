@@ -7,6 +7,7 @@ import BodyShop from "./components/Shop/BodyShop";
 import SideBarAndBody from "./components/SideBarAndBody";
 import UnrealBody from "./components/Unreal/UnrealBody";
 import CommunityMain from "./components/Community/CommunityMain";
+import ProfileMain from "./components/Community/ProfilePage/ProfileMain";
 
 const App = () => {
   const [login, setLogin] = useState(true);
@@ -49,6 +50,10 @@ const App = () => {
           <Route
             path="/unreal"
             element={<SideBarAndBody><UnrealBody /></SideBarAndBody>}
+          />
+          <Route
+            path="/profile"
+            element={<SideBarAndBody><ProfileMain /></SideBarAndBody>}
           />
         </Routes>
       </BrowserRouter>

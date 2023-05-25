@@ -1,7 +1,15 @@
 import React from 'react';
 import { avatar, closeBtn, status } from "../../assets";
+import { useNavigate } from 'react-router-dom';
 
 const ProfileDropdown = ({ handleClickClose }) => {
+  const navigate = useNavigate();
+  
+  const handleNavigate = () => {
+    navigate('/profile');
+    handleClickClose();
+  };
+
   return (
     <div
       id="dropdownInformation"
@@ -20,7 +28,8 @@ const ProfileDropdown = ({ handleClickClose }) => {
         <li>
           <a
             href="#"
-            className="hover:text-white"
+            className="text-white"
+            onClick={handleNavigate}
           >
             Profile
           </a>
