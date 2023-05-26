@@ -1,9 +1,8 @@
 import React, { useContext } from 'react'
-import { friendsArray } from '../../../constants';
-import { FriendsContext } from '../../../main';
+import { FriendsContext } from '../../../context/FriendsContext';
 
 const FriendsComponent = () => {
-  const friendsArray = useContext(FriendsContext);
+  const { friendsArray } = useContext(FriendsContext);
   return (
     <div className="mb-[22.5px] w-full">
       <div className="text-xl font-bold flex justify-between">

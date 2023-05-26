@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
 import { avatar, closeBtn, status, user_ico } from "../../assets";
-import { FriendsContext } from '../../main';
 import { RxMagnifyingGlass } from 'react-icons/rx';
+import { FriendsContext } from '../../context/FriendsContext';
 
 const FriendsDropdown = ({ handleClickClose }) => {
-  const friendsArray = useContext(FriendsContext);
-  console.log(friendsArray);
+  const { friendsArray } = useContext(FriendsContext);
   return (
     <div
       id="dropdownInformation"

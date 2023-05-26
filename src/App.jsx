@@ -8,6 +8,7 @@ import SideBarAndBody from "./components/SideBarAndBody";
 import UnrealBody from "./components/Unreal/UnrealBody";
 import CommunityMain from "./components/Community/CommunityMain";
 import ProfileMain from "./components/Community/ProfilePage/ProfileMain";
+import { FriendsProvider } from "./context/FriendsContext";
 
 const App = () => {
   const [login, setLogin] = useState(true);
@@ -17,45 +18,47 @@ const App = () => {
   return (
     <div className="relative z-0 bg-primary">
       <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <div>
-                {login ? (
-                  <div className="bg-login-background bg-cover bg-no-repeat bg-center w-full h-full flex justify-center items-center tall:h-screen">
-                    <Login onToggleRegister={handleRegister} />
-                  </div>
-                
-                ) : (
-                  <div className="bg-login-background bg-cover bg-no-repeat bg-center w-full h-full flex justify-center items-center taller:h-screen">
-                    <Register onToggleRegister={handleRegister} />
-                  </div> 
-                )}
-              </div>
-            }
-          />
-          <Route
-            path="/shop"
-            element={<SideBarAndBody><BodyShop /></SideBarAndBody>}
-          />
-          <Route
-            path="/my-games"
-            element={<SideBarAndBody><MyGames /></SideBarAndBody>}
-          />
-          <Route
-            path="/community"
-            element={<SideBarAndBody><CommunityMain /></SideBarAndBody>}
-          />
-          <Route
-            path="/unreal"
-            element={<SideBarAndBody><UnrealBody /></SideBarAndBody>}
-          />
-          <Route
-            path="/profile"
-            element={<SideBarAndBody><ProfileMain /></SideBarAndBody>}
-          />
-        </Routes>
+        <FriendsProvider>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div>
+                  {login ? (
+                    <div className="bg-login-background bg-cover bg-no-repeat bg-center w-full h-full flex justify-center items-center tall:h-screen">
+                      <Login onToggleRegister={handleRegister} />
+                    </div>
+                  
+                  ) : (
+                    <div className="bg-login-background bg-cover bg-no-repeat bg-center w-full h-full flex justify-center items-center taller:h-screen">
+                      <Register onToggleRegister={handleRegister} />
+                    </div> 
+                  )}
+                </div>
+              }
+            />
+            <Route
+              path="/shop"
+              element={<SideBarAndBody><BodyShop /></SideBarAndBody>}
+            />
+            <Route
+              path="/my-games"
+              element={<SideBarAndBody><MyGames /></SideBarAndBody>}
+            />
+            <Route
+              path="/community"
+              element={<SideBarAndBody><CommunityMain /></SideBarAndBody>}
+            />
+            <Route
+              path="/unreal"
+              element={<SideBarAndBody><UnrealBody /></SideBarAndBody>}
+            />
+            <Route
+              path="/profile"
+              element={<SideBarAndBody><ProfileMain /></SideBarAndBody>}
+            />
+          </Routes>
+        </FriendsProvider>
       </BrowserRouter>
     </div>
   );
