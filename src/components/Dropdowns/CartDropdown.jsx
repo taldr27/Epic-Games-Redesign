@@ -1,5 +1,5 @@
 import React from 'react';
-import { avatar, closeBtn, status } from "../../assets";
+import { closeBtn } from "../../assets";
 
 const CartDropdown = ({ handleClickClose }) => {
   return (
@@ -9,7 +9,8 @@ const CartDropdown = ({ handleClickClose }) => {
     >
       <img src={closeBtn} className="mt-[31px] ml-[295px]" onClick={handleClickClose} />
       <div className="flex items-center gap-[22px] my-[26px] relative">
-        <div className="font-bold text-2xl">CartDropdown</div>
+
+
       </div>
       
     </div>
