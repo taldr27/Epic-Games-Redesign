@@ -11,11 +11,11 @@ const CommunityMain = () => {
     "Epic Indies",
   ]
   return (
-    <div className="mb-[79px] relative">
-      <div className="h-[43px] mb-5 bg-primary fixed z-50 xd pr-5 2xl:pr-[87px]">
+    <div className="mb-[79px] relative h-screen">
+      <div className="bg-primary fixed xd pr-5 top-[13%] z-40 2xl:pr-[87px]">
         <BodyBar elements={barElements} />
       </div>
-      <div className="">
+      <div className="mt-[64px]">
       CommunityBody
 
       </div>

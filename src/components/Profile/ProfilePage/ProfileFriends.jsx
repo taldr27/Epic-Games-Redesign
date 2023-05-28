@@ -1,5 +1,5 @@
 import React from 'react'
-import FriendsComponent from '../communityComponents/FriendsComponent';
+import FriendsComponent from '../ProfileComponents/FriendsComponent';
 
 const ProfileFriends = () => {
   return (

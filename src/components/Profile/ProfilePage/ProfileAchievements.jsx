@@ -1,5 +1,5 @@
 import React from 'react'
-import AchievementsSlider from '../communityComponents/AchievementsSlider'
+import AchievementsSlider from '../ProfileComponents/AchievementsSlider'
 
 const ProfileAchievements = () => {
   return (

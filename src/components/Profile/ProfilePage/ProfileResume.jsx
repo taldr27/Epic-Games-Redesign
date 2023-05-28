@@ -1,6 +1,6 @@
 import React from 'react'
-import RecentlyPlayed from '../communityComponents/RecentlyPlayed'
-import Achievements from '../communityComponents/Achievements'
+import RecentlyPlayed from '../ProfileComponents/RecentlyPlayed'
+import Achievements from '../ProfileComponents/Achievements'
 import ProfileFriends from './ProfileFriends'
 
 const ProfileResume = () => {

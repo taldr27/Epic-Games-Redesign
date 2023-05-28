@@ -7,7 +7,7 @@ import BodyShop from "./components/Shop/BodyShop";
 import SideBarAndBody from "./components/SideBarAndBody";
 import UnrealBody from "./components/Unreal/UnrealBody";
 import CommunityMain from "./components/Community/CommunityMain";
-import ProfileMain from "./components/Community/ProfilePage/ProfileMain";
+import ProfileMain from "./components/Profile/ProfilePage/ProfileMain";
 import { FriendsProvider } from "./context/FriendsContext";
 
 const App = () => {
