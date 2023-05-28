@@ -10,16 +10,16 @@ import achieveTomb3 from './achievements/achieveTomb3.svg';
 import achieveTomb4 from './achievements/achieveTomb4.svg';
 import achieveTomb5 from './achievements/achieveTomb5.svg';
 
-import smallControl from '../communityPage/captures/1Control.svg';
-import smallSpider from '../communityPage/captures/1Fortnite.svg';
-import smallFornite from '../communityPage/captures/1Spider.svg';
-import mediumFortnite from '../communityPage/captures/2Fortnite.svg';
-import mediumFortnite2 from '../communityPage/captures/11Fortnite.svg';
-import mediumShoot from '../communityPage/captures/2Shoot.svg';
-import mediumTomb from '../communityPage/captures/2Tomb.svg';
-import bigFornite from '../communityPage/captures/3Fort.svg';
-import bigSpider from '../communityPage/captures/3Spider.svg';
-import bigTomb from '../communityPage/captures/3Tomb.svg';
+import smallControl from '../profilePage/captures/1Control.svg';
+import smallSpider from '../profilePage/captures/1Fortnite.svg';
+import smallFornite from '../profilePage/captures/1Spider.svg';
+import mediumFortnite from '../profilePage/captures/2Fortnite.svg';
+import mediumFortnite2 from '../profilePage/captures/11Fortnite.svg';
+import mediumShoot from '../profilePage/captures/2Shoot.svg';
+import mediumTomb from '../profilePage/captures/2Tomb.svg';
+import bigFornite from '../profilePage/captures/3Fort.svg';
+import bigSpider from '../profilePage/captures/3Spider.svg';
+import bigTomb from '../profilePage/captures/3Tomb.svg';
 
 const capturesArray = [
   smallControl,
