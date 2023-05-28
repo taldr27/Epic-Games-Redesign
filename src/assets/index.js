@@ -132,6 +132,10 @@ import closeBtn from '../assets/dropdown/closeBtn.png';
 import status from '../assets/dropdown/status.png';
 import notificationIco from '../assets/dropdown/notificationImage.png';
 
+// Community Page
+
+import cpBanner from './communityPage/StartPage/communityBanner.svg';
+
 export {
   rightArrow,
   circleArrowRight,
@@ -234,4 +238,5 @@ export {
   closeBtn,
   status,
   notificationIco,
+  cpBanner,
 };
