@@ -13,3 +13,5 @@ Available urls:
 - /community
 - /unreal
 - Click on the Avatar then Profile to go to the Profile Page.
+- Community Page will take a bit more of time to make progress.
+- Starting with the backend for registration and login.
