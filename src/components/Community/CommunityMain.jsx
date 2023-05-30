@@ -1,6 +1,7 @@
 import React from 'react'
 import { SectionWrapper } from '../../wrapper'
 import BodyBar from '../BodyNavBar';
+import CommunityBanner from './communityComponents/CommunityBanner';
 
 const CommunityMain = () => {
   const barElements = [
@@ -16,7 +17,7 @@ const CommunityMain = () => {
         <BodyBar elements={barElements} />
       </div>
       <div className="mt-[64px]">
-      CommunityBody
+        <CommunityBanner />
 
       </div>
     </div>

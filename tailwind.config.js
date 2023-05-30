@@ -39,6 +39,7 @@ export default {
       },
       backgroundImage: {
         "login-background": "url('/src/assets/login_bg.png')",
+        "community-banner": "url('/src/assets/communityPage/StartPage/communityBanner.svg')",
       },
     },
   },

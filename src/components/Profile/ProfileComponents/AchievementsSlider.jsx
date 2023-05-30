@@ -24,7 +24,6 @@ const AchievementsSlider = ({ isRandom, banner, gameTitle, arrows }) => {
             <img src={circleArrowRight} className={`bg-white rounded-full cursor-pointer ${arrows[1]}`} />
           </div>
         }
-      {console.log("asdasdasd", `${banner ? "" : `.${arrows[0]}`}`)}
       </div>
       <Swiper
         modules={[Navigation, A11y]}

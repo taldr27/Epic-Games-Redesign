@@ -1,5 +1,5 @@
 import React from 'react'
-import { capturesArray } from '../../../assets/communityPage'
+import { capturesArray } from '../../../assets/profilePage'
 
 const ProfileCaptures = () => {
   return (

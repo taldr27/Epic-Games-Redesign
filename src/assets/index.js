@@ -95,35 +95,35 @@ import trMini from '../assets/games/trMini.svg';
 import spiderMini from '../assets/games/spiderMini.svg';
 import fortniteMini from '../assets/games/fortniteMini.svg';
 
-// Community Section
+// Profile Section
 
-import userIconCP from '../assets/communityPage/userIconCP.svg';
-import onlineIconCP from '../assets/communityPage/onlineIconCP.svg';
-import starsCP from '../assets/communityPage/starsCP.svg';
-import cupCP from '../assets/communityPage/cupCP.svg';
-import platinumCP from '../assets/communityPage/platinumCP.svg';
-import penCP from '../assets/communityPage/penCP.svg';
+import userIconPP from '../assets/profilePage/userIconPP.svg';
+import onlineIconPP from '../assets/profilePage/onlineIconPP.svg';
+import starsPP from '../assets/profilePage/starsPP.svg';
+import cupPP from '../assets/profilePage/cupPP.svg';
+import platinumPP from '../assets/profilePage/platinumPP.svg';
+import penPP from '../assets/profilePage/penPP.svg';
 
 // Recently Resume section
 
-import profileRecentlySOTTR from '../assets/communityPage/recentlyPlayedGames/profileRecentlySOTTR.svg';
-import profileRecentlySpiderman from '../assets/communityPage/recentlyPlayedGames/profileRecentlySpiderman.svg';
-import profileRecentlyFortnite from '../assets/communityPage/recentlyPlayedGames/profileRecentlyFortnite.svg';
-import profileRecentlyControl from '../assets/communityPage/recentlyPlayedGames/profileRecentlyControl.svg';
-import profileRecentlyAmnesia from '../assets/communityPage/recentlyPlayedGames/profileRecentlyAmnesia.svg';
+import profileRecentlySOTTR from '../assets/profilePage/recentlyPlayedGames/profileRecentlySOTTR.svg';
+import profileRecentlySpiderman from '../assets/profilePage/recentlyPlayedGames/profileRecentlySpiderman.svg';
+import profileRecentlyFortnite from '../assets/profilePage/recentlyPlayedGames/profileRecentlyFortnite.svg';
+import profileRecentlyControl from '../assets/profilePage/recentlyPlayedGames/profileRecentlyControl.svg';
+import profileRecentlyAmnesia from '../assets/profilePage/recentlyPlayedGames/profileRecentlyAmnesia.svg';
 
-import trophieSymbol from '../assets/communityPage/recentlyPlayedGames/trophieSymbol.svg';
-import timePlayedSymbol from '../assets/communityPage/recentlyPlayedGames/timePlayedSymbol.svg';
+import trophieSymbol from '../assets/profilePage/recentlyPlayedGames/trophieSymbol.svg';
+import timePlayedSymbol from '../assets/profilePage/recentlyPlayedGames/timePlayedSymbol.svg';
 
 // Friends
 
-import Friend1 from '../assets/communityPage/friends/Friend1.svg';
-import Friend2 from '../assets/communityPage/friends/Friend2.svg';
-import Friend3 from '../assets/communityPage/friends/Friend3.svg';
-import Friend4 from '../assets/communityPage/friends/Friend4.svg';
-import Friend5 from '../assets/communityPage/friends/Friend5.svg';
-import Friend6 from '../assets/communityPage/friends/Friend6.svg';
-import Friend7 from '../assets/communityPage/friends/Friend7.svg';
+import Friend1 from '../assets/profilePage/friends/Friend1.svg';
+import Friend2 from '../assets/profilePage/friends/Friend2.svg';
+import Friend3 from '../assets/profilePage/friends/Friend3.svg';
+import Friend4 from '../assets/profilePage/friends/Friend4.svg';
+import Friend5 from '../assets/profilePage/friends/Friend5.svg';
+import Friend6 from '../assets/profilePage/friends/Friend6.svg';
+import Friend7 from '../assets/profilePage/friends/Friend7.svg';
 
 // Dropdown
 
@@ -131,6 +131,10 @@ import avatar from '../assets/dropdown/avatar.png';
 import closeBtn from '../assets/dropdown/closeBtn.png';
 import status from '../assets/dropdown/status.png';
 import notificationIco from '../assets/dropdown/notificationImage.png';
+
+// Community Page
+
+import cpBanner from './communityPage/StartPage/communityBanner.svg';
 
 export {
   rightArrow,
@@ -212,12 +216,12 @@ export {
   spiderMini,
   fortniteMini,
   shadowBG,
-  userIconCP,
-  onlineIconCP,
-  starsCP,
-  cupCP,
-  platinumCP,
-  penCP,
+  userIconPP,
+  onlineIconPP,
+  starsPP,
+  cupPP,
+  platinumPP,
+  penPP,
   profileRecentlySOTTR,
   profileRecentlySpiderman,
   profileRecentlyFortnite,
@@ -234,4 +238,5 @@ export {
   closeBtn,
   status,
   notificationIco,
+  cpBanner,
 };
