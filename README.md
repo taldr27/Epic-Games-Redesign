@@ -1,4 +1,5 @@
 # Epic-Games
+# Project on hold...
 This project will contain a re-design for the Epic games shop.
 
 Work in progress... Styles made for a screen of 1440px size.
