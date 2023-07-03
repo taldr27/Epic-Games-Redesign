@@ -19,3 +19,5 @@ Available urls:
 - Starting with the backend for registration and login.
 
 Developed with: React, Context API, Tailwind, Vite.
+
+I will continue with this next month...
